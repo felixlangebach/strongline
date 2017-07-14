@@ -6,6 +6,7 @@ export default class LocationsView extends Component {
         return (
             <div className="locations-view">
                 <h1>Standorte</h1>
+                <p>alsjdfla</p>
                 <Card
                     title="Test"
                     text="Lorem ipsum dolor sit amet ..."

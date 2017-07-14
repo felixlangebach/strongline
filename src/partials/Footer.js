@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 export default class Footer extends Component {
     render() {
@@ -14,16 +15,16 @@ export default class Footer extends Component {
                         <h1 className="mdl-mega-footer__heading">Features</h1>
                         <ul className="mdl-mega-footer__link-list">
                             <li>
-                                <a href="#">About</a>
+                                <Link to="#somewhere">About</Link>
                             </li>
                             <li>
-                                <a href="#">Terms</a>
+                                <Link to="#somewhere">Terms</Link>
                             </li>
                             <li>
-                                <a href="#">Partners</a>
+                                <Link to="#somewhere">Partners</Link>
                             </li>
                             <li>
-                                <a href="#">Updates</a>
+                                <Link to="#somewhere">Updates</Link>
                             </li>
                         </ul>
                     </div>
@@ -37,13 +38,13 @@ export default class Footer extends Component {
                         <h1 className="mdl-mega-footer__heading">Details</h1>
                         <ul className="mdl-mega-footer__link-list">
                             <li>
-                                <a href="#">Specs</a>
+                                <Link to="#somewhere">Specs</Link>
                             </li>
                             <li>
-                                <a href="#">Tools</a>
+                                <Link to="#somewhere">Tools</Link>
                             </li>
                             <li>
-                                <a href="#">Resources</a>
+                                <Link to="#somewhere">Resources</Link>
                             </li>
                         </ul>
                     </div>
@@ -57,19 +58,19 @@ export default class Footer extends Component {
                         <h1 className="mdl-mega-footer__heading">Technology</h1>
                         <ul className="mdl-mega-footer__link-list">
                             <li>
-                                <a href="#">How it works</a>
+                                <Link to="#somewhere">How it works</Link>
                             </li>
                             <li>
-                                <a href="#">Patterns</a>
+                                <Link to="#somewhere">Patterns</Link>
                             </li>
                             <li>
-                                <a href="#">Usage</a>
+                                <Link to="#somewhere">Usage</Link>
                             </li>
                             <li>
-                                <a href="#">Products</a>
+                                <Link to="#somewhere">Products</Link>
                             </li>
                             <li>
-                                <a href="#">Contracts</a>
+                                <Link to="#somewhere">Contracts</Link>
                             </li>
                         </ul>
                     </div>
@@ -83,26 +84,26 @@ export default class Footer extends Component {
                         <h1 className="mdl-mega-footer__heading">FAQ</h1>
                         <ul className="mdl-mega-footer__link-list">
                             <li>
-                                <a href="#">Questions</a>
+                                <Link to="#somewhere">Questions</Link>
                             </li>
                             <li>
-                                <a href="#">Answers</a>
+                                <Link to="#somewhere">Answers</Link>
                             </li>
                             <li>
-                                <a href="#">Contact us</a>
+                                <Link to="#somewhere">Contact us</Link>
                             </li>
                         </ul>
                     </div>
                 </div>
 
                 <div className="mdl-mega-footer__bottom-section">
-                    <div className="mdl-logo">Title</div>
+                    <div className="mdl-logo">Strongline &copy; 2017 All rights reserved</div>
                     <ul className="mdl-mega-footer__link-list">
                         <li>
-                            <a href="#">Help</a>
+                            <Link to="#somewhere">Help</Link>
                         </li>
                         <li>
-                            <a href="#">Privacy &amp; Terms</a>
+                            <Link to="#somewhere">Privacy &amp; Terms</Link>
                         </li>
                     </ul>
                 </div>
