@@ -16,7 +16,7 @@ import links from "../partials/ressources/links";
 export default class Strongline extends Component {
     render() {
         return (
-            <div className="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+            <div className="mdl-layout mdl-js-layout">
                 <Header links={links} />
                 <Drawer links={links} />
                 <main className="mdl-layout__content">
