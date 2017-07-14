@@ -1,12 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { Router, Route, Redirect, useRouterHistory } from "react-router";
-import App from "./App";
+import { Router, Route } from "react-router";
+
+// Middleware utility
 import registerServiceWorker from "./registerServiceWorker";
 import createHistory from "history/createBrowserHistory";
 
+// Global Templates
 import StronglineTemplate from "./templates/Strongline";
 
+// Individual Views
 import HomeView from "./views/Home";
 import LocationsView from "./views/Locations";
 import ShopView from "./views/Shop";

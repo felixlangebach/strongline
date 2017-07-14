@@ -8,7 +8,7 @@ export default class Header extends Component {
         const linkNodes = [];
 
         this.props.links.forEach((item, index) => {
-            const { href, link, text, icon } = item;
+            const { href, text, icon } = item;
 
             linkNodes.push(
                 <Link className="mdl-navigation__link" key={index} to={href}>
