@@ -1,11 +1,13 @@
 import React, { Component } from "react";
 import Card from "../components/Card";
+import List from "../components/List";
 
 export default class LocationsView extends Component {
     render() {
         return (
             <div className="locations-view">
                 <h1>Standorte</h1>
+                <List items={["Rogeeeeea"]} />
                 <Card
                     title="Test"
                     text="Lorem ipsum dolor sit amet ..."
