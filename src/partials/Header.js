@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import Icon from "../components/Icon";
 import Image from "../components/Image";
 
+import "./Header.css";
+
 export default class Header extends Component {
     renderLinks() {
         const linkNodes = [];
@@ -26,7 +28,7 @@ export default class Header extends Component {
             <header className="mdl-layout__header">
                 <div className="mdl-layout__header-row">
                     <span className="mdl-layout-title">
-                        <Image src="http://placehold.it/300x100" />
+                        <Image className="mdl-layout-logo" src="logo_strongline.svg" />
                     </span>
                     <div className="mdl-layout-spacer" />
                     <nav className="mdl-navigation mdl-layout--large-screen-only">
