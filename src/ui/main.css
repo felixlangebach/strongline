@@ -1,7 +1,17 @@
-/** to be done ... */
-.mdl-layout__content {
+img {
+    display: block;
     width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.mdl-layout__content {
+    width: calc(100% - 40px);
     max-width: 1280px;
     padding: 20px;
     margin: 48px auto 0 auto;
+}
+
+@media screen and (max-width: 1024px) {
+    /* TBD */
 }

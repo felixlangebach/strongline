@@ -13,7 +13,7 @@ export default class Header extends Component {
             const { href, text, icon } = item;
 
             linkNodes.push(
-                <Link className="mdl-navigation__link" key={index} to={href}>
+                <Link className="mdl-navigation__link" to={href} key={index}>
                     {icon && <Icon name={icon} />}
                     {text}
                 </Link>

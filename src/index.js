@@ -12,6 +12,7 @@ import StronglineTemplate from "./templates/Strongline";
 // Individual Views
 import ErrorView from "./views/Error";
 import HomeView from "./views/Home";
+import LocationView from "./views/Location";
 import LocationsView from "./views/Locations";
 import ShopView from "./views/Shop";
 import PhilosophyView from "./views/Philosophy";
@@ -19,6 +20,7 @@ import OffersView from "./views/Offers";
 import NewsView from "./views/News";
 import EmployeesView from "./views/Employees";
 import AboutUsView from "./views/AboutUs";
+import ContactView from "./views/Contact";
 import TrendignCollectionView from "./views/TrendingCollection";
 
 const History = createHistory();
@@ -29,6 +31,7 @@ ReactDOM.render(
             <Switch>
                 <Route exact path="/" component={HomeView} />
                 <Route exact path="/standorte" component={LocationsView} />
+                <Route exact path="/standorte/:location" component={LocationView} />
                 <Route exact path="/ueber-uns" component={AboutUsView} />
                 <Route exact path="/ueber-uns/philosophie" component={PhilosophyView} />
                 <Route exact path="/ueber-uns/mitarbeiter" component={EmployeesView} />
@@ -38,6 +41,7 @@ ReactDOM.render(
                     path="/angebote/kollektion-der-woche"
                     component={TrendignCollectionView}
                 />
+                <Route exact path="/kontakt" component={ContactView} />
                 <Route exact path="/news" component={NewsView} />
                 <Route exact path="/shop" component={ShopView} />
                 <Route component={ErrorView} />
