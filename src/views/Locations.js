@@ -25,7 +25,9 @@ export default class LocationsView extends Component {
 
         return (
             <div className="locations-view">
-                <h1>Standorte</h1>
+                <h2>
+                    Standorte <small>({datasets.length})</small>
+                </h2>
                 <Grid>
                     {datasets.map((dataset, index) => {
                         return (
