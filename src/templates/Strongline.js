@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { withRouter } from "react-router";
 
 // CSS Stylesheets
 import "material-design-lite/dist/material.min.css";
@@ -13,10 +14,15 @@ import Drawer from "../partials/Drawer";
 import links from "../partials/ressources/links";
 
 // Wrapper Template
-export default class Strongline extends Component {
+class Strongline extends Component {
+    componentWillReceiveProps(nextProps) {
+        if (this.props.location.pathname !== nextProps.location.pathname) {
+        }
+    }
+
     render() {
         return (
-            <div className="mdl-layout mdl-js-layout">
+            <div className="mdl-layout mdl-js-layout mdl-layout__header--scroll">
                 <Header links={links} />
                 <Drawer links={links} />
                 <main className="mdl-layout__content">
@@ -29,3 +35,5 @@ export default class Strongline extends Component {
         );
     }
 }
+
+export default withRouter(Strongline);

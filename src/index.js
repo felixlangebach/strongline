@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { Router, Route } from "react-router";
+import { Router, Route, Switch } from "react-router";
 
 // Middleware utility
 import registerServiceWorker from "./registerServiceWorker";
@@ -10,6 +10,7 @@ import createHistory from "history/createBrowserHistory";
 import StronglineTemplate from "./templates/Strongline";
 
 // Individual Views
+import ErrorView from "./views/Error";
 import HomeView from "./views/Home";
 import LocationsView from "./views/Locations";
 import ShopView from "./views/Shop";
@@ -25,15 +26,22 @@ const History = createHistory();
 ReactDOM.render(
     <Router history={History}>
         <StronglineTemplate>
-            <Route path="/" component={HomeView} />
-            <Route path="/standorte" component={LocationsView} />
-            <Route path="/ueber-uns" component={AboutUsView} />
-            <Route path="/ueber-uns/philosophie" component={PhilosophyView} />
-            <Route path="/ueber-uns/mitarbeiter" component={EmployeesView} />
-            <Route path="/angebote" component={OffersView} />
-            <Route path="/angebote/kollektion-der-woche" component={TrendignCollectionView} />
-            <Route path="/news" component={NewsView} />
-            <Route path="/shop" component={ShopView} />
+            <Switch>
+                <Route exact path="/" component={HomeView} />
+                <Route exact path="/standorte" component={LocationsView} />
+                <Route exact path="/ueber-uns" component={AboutUsView} />
+                <Route exact path="/ueber-uns/philosophie" component={PhilosophyView} />
+                <Route exact path="/ueber-uns/mitarbeiter" component={EmployeesView} />
+                <Route exact path="/angebote" component={OffersView} />
+                <Route
+                    exact
+                    path="/angebote/kollektion-der-woche"
+                    component={TrendignCollectionView}
+                />
+                <Route exact path="/news" component={NewsView} />
+                <Route exact path="/shop" component={ShopView} />
+                <Route component={ErrorView} />
+            </Switch>
         </StronglineTemplate>
     </Router>,
     document.getElementById("root")

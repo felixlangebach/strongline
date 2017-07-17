@@ -1,1 +1,7 @@
 /** to be done ... */
+.mdl-layout__content {
+    width: 100%;
+    max-width: 1280px;
+    padding: 20px;
+    margin: 48px auto 0 auto;
+}
