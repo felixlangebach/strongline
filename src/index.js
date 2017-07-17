@@ -12,6 +12,7 @@ import StronglineTemplate from "./templates/Strongline";
 // Individual Views
 import ErrorView from "./views/Error";
 import HomeView from "./views/Home";
+import LocationView from "./views/Location";
 import LocationsView from "./views/Locations";
 import ShopView from "./views/Shop";
 import PhilosophyView from "./views/Philosophy";
@@ -29,6 +30,7 @@ ReactDOM.render(
             <Switch>
                 <Route exact path="/" component={HomeView} />
                 <Route exact path="/standorte" component={LocationsView} />
+                <Route exact path="/standorte/:location" component={LocationView} />
                 <Route exact path="/ueber-uns" component={AboutUsView} />
                 <Route exact path="/ueber-uns/philosophie" component={PhilosophyView} />
                 <Route exact path="/ueber-uns/mitarbeiter" component={EmployeesView} />

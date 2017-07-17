@@ -3,7 +3,6 @@ import { withRouter } from "react-router";
 import ReactDOM from "react-dom";
 
 // CSS Stylesheets
-import "material-design-lite/dist/material.min.css";
 import "../ui/main.css";
 
 // Partial Components
