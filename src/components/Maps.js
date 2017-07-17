@@ -11,6 +11,7 @@ export default class Maps extends Component {
         return (
             <div className="maps">
                 <img
+                    style={{ height: "auto", width: 640, backgroundColor: "#dddddd" }}
                     src={`${GOOGLE_STATIC_MAP}?center=${location}&markers=${location}&zoom=${zoom}&path=enc:encoded_data&size=640x400&style=element:labels|visibility:off&style=element:geometry.stroke|visibility:off&style=feature:landscape|element:geometry|saturation:-100&style=feature:water|saturation:-100|invert_lightness:true&key=${GOOGLE_API_KEY}`}
                 />
             </div>

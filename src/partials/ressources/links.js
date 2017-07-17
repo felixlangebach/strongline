@@ -32,6 +32,10 @@ export default [
         href: "/news"
     },
     {
+        text: "Kontakt",
+        href: "/kontakt"
+    },
+    {
         href: "/shop",
         icon: "add shopping cart"
     }

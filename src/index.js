@@ -20,6 +20,7 @@ import OffersView from "./views/Offers";
 import NewsView from "./views/News";
 import EmployeesView from "./views/Employees";
 import AboutUsView from "./views/AboutUs";
+import ContactView from "./views/Contact";
 import TrendignCollectionView from "./views/TrendingCollection";
 
 const History = createHistory();
@@ -40,6 +41,7 @@ ReactDOM.render(
                     path="/angebote/kollektion-der-woche"
                     component={TrendignCollectionView}
                 />
+                <Route exact path="/kontakt" component={ContactView} />
                 <Route exact path="/news" component={NewsView} />
                 <Route exact path="/shop" component={ShopView} />
                 <Route component={ErrorView} />

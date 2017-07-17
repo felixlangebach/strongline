@@ -9,6 +9,7 @@ import "../ui/main.css";
 import Header from "../partials/Header";
 import Footer from "../partials/Footer";
 import Drawer from "../partials/Drawer";
+import AppBar from "../partials/AppBar";
 
 // Datasets
 import links from "../partials/ressources/links";
@@ -23,6 +24,7 @@ class Strongline extends Component {
     render() {
         return (
             <div className="mdl-layout mdl-js-layout mdl-layout__header--scroll">
+                <AppBar />
                 <Header links={links} />
                 <Drawer links={links} delegate={this.clickListener.bind(this)} />
                 <main className="mdl-layout__content">

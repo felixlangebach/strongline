@@ -7,7 +7,8 @@
             "address": "Musterstrasse 33",
             "location": "St. Gallen, Schweiz"
         },
-        "description": "Informationstext kommt hier hin"
+        "description": "Informationstext kommt hier hin",
+        "shortDescription": "Kurzer Informationstext kommt hier hin"
     },
     "zuerich": {
         "company": "Strongline ZH",
@@ -17,6 +18,7 @@
             "address": "Musterstrasse 33",
             "location": "Zürich, Schweiz"
         },
-        "description": "Informationstext kommt hier hin"
+        "description": "Informationstext kommt hier hin",
+        "shortDescription": "Kurzer Informationstext kommt hier hin"
     }
 }

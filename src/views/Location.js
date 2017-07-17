@@ -40,6 +40,10 @@ class LocationView extends Component {
                                 {data.contact.location}
                                 <br />
                             </p>
+                            <hr />
+                            <p>
+                                {data.description}
+                            </p>
                         </div>
                     </Col>
                 </Grid>

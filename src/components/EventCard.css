@@ -1,0 +1,40 @@
+.event-card.mdl-card {
+    width: 256px;
+    height: 256px;
+    background: #3e4eb8;
+}
+.event-card > .mdl-card__actions {
+    height: 52px;
+    padding: 16px;
+    background: rgba(0, 0, 0, 0.2);
+}
+.event-card > .mdl-card__actions {
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.event-card > .mdl-card__title {
+    align-items: flex-start;
+}
+.event-card > .mdl-card__title > h4 {
+    margin-top: 0;
+}
+.event-card > .mdl-card__actions {
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+}
+.event-card > .mdl-card__actions > .material-icons {
+    padding-right: 10px;
+}
+.event-card > .mdl-card__title,
+.event-card > .mdl-card__actions,
+.event-card > .mdl-card__actions > .mdl-button {
+    color: #fff;
+}
+.mdl-card__date {
+    font-size: 80%;
+    font-weight: 300;
+}
+.mdl-card__time {
+    font-size: 60%;
+    font-weight: 400;
+}
