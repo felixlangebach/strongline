@@ -1,0 +1,14 @@
+.mdl-cell__content-wrapper {
+    padding: 0 20px 20px 20px;
+    max-width: 50%;
+}
+
+.mdl-cell__content-wrapper > h1:first-child,
+.mdl-cell__content-wrapper > h2:first-child,
+.mdl-cell__content-wrapper > h3:first-child,
+.mdl-cell__content-wrapper > h4:first-child,
+.mdl-cell__content-wrapper > h5:first-child,
+.mdl-cell__content-wrapper > h6:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}

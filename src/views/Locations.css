@@ -1,3 +1,14 @@
 .locations-view .mdl-card {
     width: 100%;
 }
+
+.locations-view__container-region > h4 > a {
+    color: #000;
+    text-decoration: none;
+}
+
+.locations-view__container-region .material-icons {
+    color: #ec6248;
+    size: 80%;
+    vertical-align: baseline;
+}

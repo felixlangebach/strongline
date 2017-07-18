@@ -1,9 +1,14 @@
 .mdl-app-bar-logo {
+    z-index: 100;
     background-color: #ec6248;
     height: 60px;
     width: 100%;
     display: block;
     margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 .mdl-app-bar-logo img {
@@ -12,6 +17,10 @@
     display: block;
     margin: 0 auto;
     padding: 5px 0;
+}
+
+.mdl-layout.mdl-layout--home .mdl-app-bar-logo {
+    background-color: transparent;
 }
 
 @media all and (min-width: 1024px) {

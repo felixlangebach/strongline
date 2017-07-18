@@ -1,5 +1,8 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
+import Breadcrumb from "../components/Breadcrumb";
 import Card from "../components/Card";
+import Icon from "../components/Icon";
 import Grid, { Col } from "../components/Grid";
 import ContentSection from "../layouts/ContentSection";
 import database from "../data/locations";
@@ -25,28 +28,57 @@ export default class LocationsView extends Component {
 
         return (
             <div className="locations-view">
+                <Breadcrumb
+                    links={[
+                        {
+                            href: "/",
+                            text: "Strongline"
+                        },
+                        {
+                            text: "Standorte"
+                        }
+                    ]}
+                />
                 <ContentSection>
                     <h2>
                         <span className="mdl-badge" data-badge={datasets.length}>
                             Standorte
                         </span>
                     </h2>
-                    <Grid>
+                    <div className="locations-view__container">
                         {datasets.map((dataset, index) => {
                             return (
-                                <Col mobile={12} tablet={4} desktop={4} key={index}>
-                                    <Card
-                                        title={dataset.company}
-                                        text={dataset.shortDescription}
-                                        button={{
-                                            text: "Details",
-                                            link: `/standorte/${dataset.slug}`
-                                        }}
-                                    />
-                                </Col>
+                                <div
+                                    className="locations-view__container-region"
+                                    key={dataset.slug}
+                                >
+                                    <h4>
+                                        <Link to={`/standorte/${dataset.slug}`}>
+                                            <Icon name="filter list" /> {dataset.title}
+                                        </Link>
+                                    </h4>
+                                    <Grid>
+                                        {Object.keys(dataset.list).map((slug, centerIndex) => {
+                                            const center = dataset.list[slug];
+
+                                            return (
+                                                <Col mobile={12} tablet={4} desktop={4} key={slug}>
+                                                    <Card
+                                                        title={center.company}
+                                                        text={center.shortDescription}
+                                                        button={{
+                                                            text: "Details",
+                                                            link: `/standorte/${dataset.slug}/${slug}`
+                                                        }}
+                                                    />
+                                                </Col>
+                                            );
+                                        })}
+                                    </Grid>
+                                </div>
                             );
                         })}
-                    </Grid>
+                    </div>
                 </ContentSection>
             </div>
         );

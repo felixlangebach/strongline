@@ -1,9 +1,16 @@
 import React, { Component } from "react";
+import "./Grid.css";
 
 export default class Grid extends Component {
+    static defaultProps = {
+        spacing: true
+    };
+
     render() {
+        const { spacing } = this.props;
+
         return (
-            <div className="mdl-grid">
+            <div className={"mdl-grid" + (!spacing ? " mdl-grid--no-spacing" : "")}>
                 {this.props.children}
             </div>
         );
@@ -38,3 +45,8 @@ export class Col extends Component {
         );
     }
 }
+
+export const ContentWrapper = ({ children }) =>
+    <div className="mdl-cell__content-wrapper">
+        {children}
+    </div>;

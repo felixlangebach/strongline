@@ -32,6 +32,10 @@ export default [
         href: "/news"
     },
     {
+        text: "Mitarbeiter",
+        href: "/ueber-uns/mitarbeiter"
+    },
+    {
         text: "Kontakt",
         href: "/kontakt"
     },

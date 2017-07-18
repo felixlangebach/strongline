@@ -1,7 +1,45 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
+import Grid, { Col } from "../components/Grid";
+import ContentSection from "../layouts/ContentSection";
+import Breadcrumb from "../components/Breadcrumb";
 
-export default class XXView extends Component {
+export default class ShopView extends Component {
     render() {
-        return <h1>Content XY</h1>;
+        return (
+            <div data-view="ShopView">
+                <Breadcrumb
+                    links={[
+                        {
+                            href: "/",
+                            text: "Strongline"
+                        },
+                        {
+                            text: "Online Shop"
+                        }
+                    ]}
+                />
+                <ContentSection modifier="space" width="small">
+                    <Grid>
+                        <Col phone={12} tablet={12} desktop={12}>
+                            <h3>Unser Shop eröffnet in kürze ...</h3>
+                        </Col>
+                        <Col phone={12} tablet={10} desktop={8}>
+                            <p>
+                                Besuchen Sie diese Seite später wieder, stöbern Sie doch in dieser
+                                Zeit in unseren <Link to="/angebote">Angeboten</Link> oder besuchen
+                                Sie eines unseren vielen <Link to="/standorte">Standorte</Link> in
+                                der Schweiz. Besten Dank für Ihre Geduld.
+                            </p>
+                        </Col>
+                        <Col phone={12} tablet={10} desktop={8}>
+                            <p>
+                                <strong>Ihr Strongline Team</strong>
+                            </p>
+                        </Col>
+                    </Grid>
+                </ContentSection>
+            </div>
+        );
     }
 }

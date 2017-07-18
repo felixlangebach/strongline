@@ -14,6 +14,7 @@ import ErrorView from "./views/Error";
 import HomeView from "./views/Home";
 import LocationView from "./views/Location";
 import LocationsView from "./views/Locations";
+import LocationsFilterView from "./views/LocationsFilter";
 import ShopView from "./views/Shop";
 import PhilosophyView from "./views/Philosophy";
 import OffersView from "./views/Offers";
@@ -31,6 +32,7 @@ ReactDOM.render(
             <Switch>
                 <Route exact path="/" component={HomeView} />
                 <Route exact path="/standorte" component={LocationsView} />
+                <Route exact path="/standorte/:region" component={LocationsFilterView} />
                 <Route exact path="/standorte/:location/:id" component={LocationView} />
                 <Route exact path="/ueber-uns" component={AboutUsView} />
                 <Route exact path="/ueber-uns/philosophie" component={PhilosophyView} />

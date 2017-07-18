@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import Typist from "react-typist";
-import typistConfig from "../data/typistConfig";
+import Breadcrumb from "../components/Breadcrumb";
 import Grid, { Col } from "../components/Grid";
 import EventCard from "../components/EventCard";
 import ContentSection from "../layouts/ContentSection";
@@ -10,6 +9,17 @@ export default class OffersView extends Component {
     render() {
         return (
             <div data-view="OffersView">
+                <Breadcrumb
+                    links={[
+                        {
+                            href: "/",
+                            text: "Strongline"
+                        },
+                        {
+                            text: "Angebote"
+                        }
+                    ]}
+                />
                 <ContentSection>
                     <h2>
                         Angebote <small>({database.length})</small>

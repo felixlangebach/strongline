@@ -1,6 +1,9 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import Typist from "react-typist";
 import typistConfig from "../data/typistConfig";
+import Button from "../components/Button";
+import Icon from "../components/Icon";
 import Grid, { Col } from "../components/Grid";
 import Breadcrumb from "../components/Breadcrumb";
 import ContentSection from "../layouts/ContentSection";
@@ -93,6 +96,15 @@ export default class AboutUsView extends Component {
                                 information highway will close the loop on focusing solely on the
                                 bottom line.
                             </p>
+                        </Col>
+                    </Grid>
+                    <Grid>
+                        <Col phone={12} tablet={12} desktop={12} key="show-all">
+                            <Link to="/ueber-uns/mitarbeiter">
+                                <Button>
+                                    <Icon name="link" /> Unsere Mitarbeiter
+                                </Button>
+                            </Link>
                         </Col>
                     </Grid>
                 </ContentSection>

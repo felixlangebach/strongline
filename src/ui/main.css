@@ -22,6 +22,33 @@
     -webkit-font-smoothing: antialiased;
 }
 
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a,
+p a,
+li a {
+    color: #ec6248;
+    text-decoration: none;
+    transition: all 0.35s ease-in-out;
+    -ms-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+}
+
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover,
+p a:hover,
+li a:hover {
+    opacity: 0.6;
+}
+
 img {
     display: block;
     width: 100%;
@@ -29,10 +56,9 @@ img {
     height: auto;
 }
 
-.mdl-layout.mdl-layout--home .mdl-layout__header {
-    background-color: transparent;
-    min-height: 0 !important;
-    height: 0 !important;
+.mdl-layout-logo {
+    min-width: 120px;
+    width: auto;
 }
 
 .mdl-badge[data-badge]:after {

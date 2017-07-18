@@ -4,3 +4,23 @@
     padding: 20px;
     margin: 48px auto 0 auto;
 }
+
+.content-section--spaced {
+    margin: 75px auto;
+}
+
+.content-section--spaced-title {
+    margin: 55px auto 75px auto;
+}
+
+.content-section--no-space {
+    margin: 0 auto;
+}
+
+.content-section--width-small {
+    max-width: 980px;
+}
+
+.content-section--width-x-small {
+    max-width: 500px;
+}
