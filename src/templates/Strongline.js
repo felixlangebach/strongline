@@ -16,10 +16,6 @@ import links from "../partials/ressources/links";
 
 // Wrapper Template
 class Strongline extends Component {
-    componentWillUpdate(nextProps) {
-        console.log(nextProps);
-    }
-
     clickListener() {
         // On Link click close the drawer element via MaterialUI API
         ReactDOM.findDOMNode(this).MaterialLayout.toggleDrawer();
@@ -27,7 +23,12 @@ class Strongline extends Component {
 
     render() {
         return (
-            <div className="mdl-layout mdl-js-layout mdl-layout__header--scroll">
+            <div
+                className={
+                    "mdl-layout mdl-js-layout mdl-layout__header--scroll" +
+                    (this.props.location.pathname === "/" ? " mdl-layout--home" : "")
+                }
+            >
                 <AppBar />
                 <Header links={links} />
                 <Drawer links={links} delegate={this.clickListener.bind(this)} />

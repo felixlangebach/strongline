@@ -29,6 +29,12 @@ img {
     height: auto;
 }
 
+.mdl-layout.mdl-layout--home .mdl-layout__header {
+    background-color: transparent;
+    min-height: 0 !important;
+    height: 0 !important;
+}
+
 .mdl-badge[data-badge]:after {
     background: #ec6248;
 }

@@ -31,7 +31,7 @@ ReactDOM.render(
             <Switch>
                 <Route exact path="/" component={HomeView} />
                 <Route exact path="/standorte" component={LocationsView} />
-                <Route exact path="/standorte/:location" component={LocationView} />
+                <Route exact path="/standorte/:location/:id" component={LocationView} />
                 <Route exact path="/ueber-uns" component={AboutUsView} />
                 <Route exact path="/ueber-uns/philosophie" component={PhilosophyView} />
                 <Route exact path="/ueber-uns/mitarbeiter" component={EmployeesView} />

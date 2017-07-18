@@ -2,24 +2,34 @@ import React, { Component } from "react";
 import { withRouter } from "react-router";
 import { Link } from "react-router-dom";
 import Maps from "../components/Maps";
-import { getLocationById } from "../data/locations";
+import { getLocationByRegionAndId } from "../data/locations";
 import Grid, { Col } from "../components/Grid";
 import ContentSection from "../layouts/ContentSection";
 
 class LocationView extends Component {
+    renderNotFound() {
+        return (
+            <div>
+                <h2>Nichts gefunden ...</h2>
+                <p>
+                    Finde deinen Standort unter <Link to="/standorte">Standorte</Link>
+                </p>
+            </div>
+        );
+    }
+
     render() {
         const location = this.props.match.params.location;
-        const data = getLocationById(location);
+        const id = this.props.match.params.id;
+
+        if (!location || !id) {
+            return this.renderNotFound();
+        }
+
+        const data = getLocationByRegionAndId(location, id);
 
         if (!data) {
-            return (
-                <div>
-                    <h2>Nichts gefunden ...</h2>
-                    <p>
-                        Finde deinen Standort unter <Link to="/standorte">Standorte</Link>
-                    </p>
-                </div>
-            );
+            return this.renderNotFound();
         }
 
         return (
