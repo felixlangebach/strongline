@@ -1,6 +1,12 @@
 .mdl-cell__content-wrapper {
-    padding: 0 20px 20px 20px;
-    max-width: 50%;
+    padding: 0 40px 20px 40px;
+    margin-right: 50%;
+}
+
+.mdl-cell__content-wrapper--align-right {
+    text-align: right;
+    margin-left: 50%;
+    margin-right: 0;
 }
 
 .mdl-cell__content-wrapper > h1:first-child,
@@ -9,6 +15,6 @@
 .mdl-cell__content-wrapper > h4:first-child,
 .mdl-cell__content-wrapper > h5:first-child,
 .mdl-cell__content-wrapper > h6:first-child {
-    margin-top: 0;
+    margin-top: 5px;
     padding-top: 0;
 }

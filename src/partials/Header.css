@@ -12,7 +12,6 @@
 }
 
 .mdl-layout.mdl-layout--home .mdl-layout__header {
-    background-color: transparent;
-    min-height: 0 !important;
-    height: 0 !important;
+    background-color: #000;
+    height: auto;
 }

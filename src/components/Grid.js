@@ -46,7 +46,12 @@ export class Col extends Component {
     }
 }
 
-export const ContentWrapper = ({ children }) =>
-    <div className="mdl-cell__content-wrapper">
+export const ContentWrapper = ({ children, align }) =>
+    <div
+        className={
+            "mdl-cell__content-wrapper" +
+            (align ? " mdl-cell__content-wrapper--align-" + align : "")
+        }
+    >
         {children}
     </div>;

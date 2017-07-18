@@ -9,6 +9,11 @@
     margin: 75px auto;
 }
 
+.content-section--spaced-inner {
+    margin: 0 auto 0 auto;
+    padding: 75px auto;
+}
+
 .content-section--spaced-title {
     margin: 55px auto 75px auto;
 }

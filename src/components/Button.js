@@ -7,12 +7,13 @@ export default class Button extends Component {
         raised: true,
         disabled: false,
         type: "button",
-        role: "button"
+        role: "button",
+        primary: false
     };
 
     get classes() {
         const classes = [];
-        const { raised, ripple, disabled } = this.props;
+        const { primary, raised, ripple, disabled } = this.props;
 
         if (raised) {
             classes.push("mdl-button--raised");
@@ -20,6 +21,10 @@ export default class Button extends Component {
 
         if (ripple) {
             classes.push("mdl-js-ripple-effect");
+        }
+
+        if (primary) {
+            classes.push("is-primary");
         }
 
         return classes.join(" ");

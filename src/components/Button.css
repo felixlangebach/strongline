@@ -2,3 +2,8 @@
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .14), 0 6px 3px -2px rgba(0, 0, 0, .2),
         0 2px 5px 0 rgba(0, 0, 0, .12);
 }
+
+.mdl-button.is-primary {
+    background-color: #ec6248;
+    color: #fff;
+}

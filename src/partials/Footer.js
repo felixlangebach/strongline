@@ -1,21 +1,17 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import Grid, { Col } from "../components/Grid";
+import "./Footer.css";
 
 export default class Footer extends Component {
     render() {
         return (
-            <footer className="mdl-mini-footer">
-                <div className="mdl-mini-footer__left-section">
-                    <div className="mdl-logo">&copy; 2017, Strongline Ltd.</div>
-                    <ul className="mdl-mini-footer__link-list">
-                        <li>
-                            <Link to="#help">Help</Link>
-                        </li>
-                        <li>
-                            <Link to="#privacy">Privacy &amp; Terms</Link>
-                        </li>
-                    </ul>
-                </div>
+            <footer className="mdl-custom-footer">
+                <Grid spacing={false}>
+                    <Col phone={12} tablet={12} desktop={12}>
+                        2017 &copy; Stronglife Ltd.
+                    </Col>
+                </Grid>
             </footer>
         );
     }
