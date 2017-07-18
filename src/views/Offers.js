@@ -13,7 +13,7 @@ export default class OffersView extends Component {
                 <Grid>
                     {database.map((data, index) => {
                         return (
-                            <Col mobile={12} tablet={5} desktop={3} key={index}>
+                            <Col phone={12} tablet={4} desktop={3} key={index}>
                                 <EventCard title={data.title} time={data.time} date={data.date} />
                             </Col>
                         );

@@ -4,3 +4,4 @@
 *.log
 *.debug
 *.error
+.DS_Store

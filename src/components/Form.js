@@ -26,7 +26,7 @@ export const Input = ({ type = "text", id, placeholder = "..." }) =>
         style={{ display: "block" }}
     >
         <input className="mdl-textfield__input" type={type} id={id} />
-        <label className="mdl-textfield__label" for={id}>
+        <label className="mdl-textfield__label" htmlFor={id}>
             {placeholder}
         </label>
     </div>;
@@ -37,7 +37,7 @@ export const Textarea = ({ rows = 5, id, placeholder = "..." }) =>
         style={{ display: "block" }}
     >
         <textarea className="mdl-textfield__input" type="text" rows={rows} id={id} />
-        <label className="mdl-textfield__label" for={id}>
+        <label className="mdl-textfield__label" htmlFor={id}>
             {placeholder}
         </label>
     </div>;
