@@ -1,13 +1,21 @@
 .mdl-app-bar-logo {
-    height: 50px;
-    width: auto;
+    background-color: #ec6248;
+    height: 60px;
+    width: 100%;
     display: block;
     margin: 0 auto;
 }
 
 .mdl-app-bar-logo img {
     height: 50px;
-    width: 150px;
+    width: 135px;
     display: block;
-    margin: 10px auto;
+    margin: 0 auto;
+    padding: 5px 0;
+}
+
+@media all and (min-width: 1024px) {
+    .mdl-app-bar-logo {
+        display: none;
+    }
 }

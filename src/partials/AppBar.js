@@ -3,9 +3,9 @@ import Image from "../components/Image";
 
 import "./AppBar.css";
 
-export default () =>
-    <div className="mdl-cell--hide-desktop">
-        <div className="mdl-app-bar-logo">
-            <Image src="logo_strongline.svg" alt="Logo" />
-        </div>
+const AppBar = () =>
+    <div className="mdl-app-bar-logo">
+        <Image src="logo_strongline.svg" alt="Logo" />
     </div>;
+
+export default AppBar;

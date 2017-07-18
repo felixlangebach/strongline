@@ -1,0 +1,20 @@
+.breadcrumb {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden; /* children are floated, clearfix hack */
+}
+
+.breadcrumb .breadcrumb-item {
+    float: left;
+    margin: 0;
+}
+
+.breadcrumb .breadcrumb-item::after {
+    content: "/";
+    padding: 0 10px;
+}
+
+.breadcrumb .breadcrumb-item:last-of-type::after {
+    content: "";
+}

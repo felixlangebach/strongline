@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import Icon from "../components/Icon";
-import Image from "../components/Image";
+
+import "./Drawer.css";
 
 export default class Header extends Component {
     renderLinks() {

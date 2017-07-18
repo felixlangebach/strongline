@@ -2,3 +2,11 @@
     height: 50px;
     display: block;
 }
+
+.mdl-layout__header {
+    background-color: #ec6248;
+}
+
+.mdl-layout__header-row .mdl-navigation__link {
+    color: #ffffff;
+}

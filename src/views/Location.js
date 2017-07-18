@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Maps from "../components/Maps";
 import { getLocationById } from "../data/locations";
 import Grid, { Col } from "../components/Grid";
+import ContentSection from "../layouts/ContentSection";
 
 class LocationView extends Component {
     render() {
@@ -23,30 +24,32 @@ class LocationView extends Component {
 
         return (
             <div data-view="LocationView">
-                <Grid>
-                    <Col phone={12} tablet={7} desktop={8}>
-                        <Maps location={data.query} zoom={14} />
-                    </Col>
-                    <Col phone={12} tablet={5} desktop={4}>
-                        <div className="location-info">
-                            <h3>
-                                {data.company}
-                            </h3>
-                            <p>
-                                {data.contact.chief}
-                                <br />
-                                {data.contact.address}
-                                <br />
-                                {data.contact.location}
-                                <br />
-                            </p>
-                            <hr />
-                            <p>
-                                {data.description}
-                            </p>
-                        </div>
-                    </Col>
-                </Grid>
+                <ContentSection>
+                    <Grid>
+                        <Col phone={12} tablet={7} desktop={8}>
+                            <Maps location={data.query} zoom={14} />
+                        </Col>
+                        <Col phone={12} tablet={5} desktop={4}>
+                            <div className="location-info">
+                                <h3>
+                                    {data.company}
+                                </h3>
+                                <p>
+                                    {data.contact.chief}
+                                    <br />
+                                    {data.contact.address}
+                                    <br />
+                                    {data.contact.location}
+                                    <br />
+                                </p>
+                                <hr />
+                                <p>
+                                    {data.description}
+                                </p>
+                            </div>
+                        </Col>
+                    </Grid>
+                </ContentSection>
             </div>
         );
     }

@@ -22,18 +22,15 @@
     -webkit-font-smoothing: antialiased;
 }
 
-.mdl-layout__content {
-    width: calc(100% - 40px);
-    max-width: 1280px;
-    padding: 20px;
-    margin: 48px auto 0 auto;
-}
-
 img {
     display: block;
     width: 100%;
     max-width: 100%;
     height: auto;
+}
+
+.mdl-badge[data-badge]:after {
+    background: #ec6248;
 }
 
 @media screen and (max-width: 1024px) {

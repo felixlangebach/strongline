@@ -16,6 +16,10 @@ import links from "../partials/ressources/links";
 
 // Wrapper Template
 class Strongline extends Component {
+    componentWillUpdate(nextProps) {
+        console.log(nextProps);
+    }
+
     clickListener() {
         // On Link click close the drawer element via MaterialUI API
         ReactDOM.findDOMNode(this).MaterialLayout.toggleDrawer();
