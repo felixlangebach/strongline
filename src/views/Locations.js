@@ -55,6 +55,9 @@ export default class LocationsView extends Component {
                                     <h4>
                                         <Link to={`/standorte/${dataset.slug}`}>
                                             <Icon name="filter list" /> {dataset.title}
+                                            <small>
+                                                {" "}({Object.keys(dataset.list).length} Verfügbar)
+                                            </small>
                                         </Link>
                                     </h4>
                                     <Grid>
