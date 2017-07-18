@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import Breadcrumb from "../components/Breadcrumb";
 import Grid, { Col } from "../components/Grid";
 import EventCard from "../components/EventCard";
@@ -25,6 +26,11 @@ export default class OffersView extends Component {
                         Angebote <small>({database.length})</small>
                     </h2>
                     <Grid>
+                        {database.length === 0
+                            ? <p>
+                                  <a href="/angebote">Bitte Seite neu laden</a>
+                              </p>
+                            : null}
                         {database.map((data, index) => {
                             return (
                                 <Col phone={12} tablet={4} desktop={3} key={index}>

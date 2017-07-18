@@ -2,7 +2,40 @@
     max-width: 98%;
 }
 
+.home-section p.card-package-intro-text {
+    max-width: 600px;
+    display: inline-block;
+}
+
 .home-section-red {
     background-color: #ec6248;
     color: #fff;
+}
+
+.home-section-grey {
+    background-color: #1c1c1c;
+    color: #fff;
+}
+
+.home-section-light-grey {
+    background-color: #d6d6d6;
+}
+
+.home-section .mdl-switch {
+    margin: 0 auto;
+    display: block;
+    width: 37px;
+}
+.home-section .card-package-currency-switch {
+    transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+}
+
+.home-section .card-package-currency-switch strong {
+    color: #ec6248;
+}
+
+.home-section .mdl-switch__track {
+    background-color: #ec6248;
 }

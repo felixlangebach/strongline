@@ -1,0 +1,57 @@
+.card-package-contents {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 17px;
+}
+
+.card-package .card-package-title {
+    text-align: center;
+    width: 100%;
+    display: block;
+}
+
+.card-package .card-package-price {
+    padding: 10px 0;
+}
+
+.card-package .card-package-price .mdl-chip {
+    background-color: #ec6248;
+    color: #fff;
+}
+
+.card-package .mdl-card__title .material-icons {
+    font-size: 55px;
+    display: block;
+}
+
+.card-package-contents__item {
+    padding: 7px 0;
+}
+
+/* Themes */
+.card-package.card-package--theme-bronze .mdl-chip {
+    background-color: #c6af79;
+}
+
+.card-package.card-package--theme-bronze .material-icons {
+    color: #c6af79;
+}
+
+.card-package.card-package--theme-silver .mdl-chip {
+    background-color: #cdd6d4;
+    color: #000;
+}
+
+.card-package.card-package--theme-silver .material-icons {
+    color: #cdd6d4;
+}
+
+.card-package.card-package--theme-gold .mdl-chip {
+    background-color: #ddce5a;
+    color: #000;
+}
+
+.card-package.card-package--theme-gold .material-icons {
+    color: #ddce5a;
+}
