@@ -2,6 +2,10 @@
     color: #ffffff;
 }
 
+.mdl-layout__drawer.is-visible {
+    z-index: 100;
+}
+
 .mdl-layout__drawer-button {
-    z-index: 200;
+    z-index: 50;
 }
