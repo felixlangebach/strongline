@@ -1,12 +1,21 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+
+// Database
+import database from "../data/locations";
+
+// Layouts
+import ContentSection from "../layouts/ContentSection";
+
+// Components
 import Breadcrumb from "../components/Breadcrumb";
 import Card from "../components/Card";
 import MaterialIcon from "../components/MaterialIcon";
 import Grid, { Col } from "../components/Grid";
-import ContentSection from "../layouts/ContentSection";
-import database from "../data/locations";
+import ShareBar from "../components/ShareBar";
+import Line from "../components/Line";
 
+// Styles
 import "./Locations.css";
 
 export default class LocationsView extends Component {
@@ -92,6 +101,8 @@ export default class LocationsView extends Component {
                         })}
                     </div>
                 </ContentSection>
+                <ShareBar title="Werde Teil der Strongline Community" />
+                <Line color="#ec6248" height={3} />
             </div>
         );
     }

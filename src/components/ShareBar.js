@@ -1,9 +1,10 @@
-import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import React from "react";
 import IonIcon from "../components/IonIcon";
 
+// Styles
 import "./ShareBar.css";
 
+// URL Configuration
 export const SHARE_LINKS = {
     FACEBOOK: "https://facebook.com/strongline",
     TWITTER: "https://twitter.com/strongline",
@@ -11,6 +12,7 @@ export const SHARE_LINKS = {
     G_PLUS: "https://plus.google.com/strongline"
 };
 
+// Single Button
 export const ShareButton = ({ className, icon, url }) => {
     return (
         <a className={className} href={url} target="_blank" rel="nofollow">
@@ -19,6 +21,7 @@ export const ShareButton = ({ className, icon, url }) => {
     );
 };
 
+// Render 4 buttons for FB, Twitter, IG and GPlus
 const ShareBar = ({ title, facebook = true, twitter = true, instagram = true, gplus = true }) => {
     return (
         <div className="share-bar">

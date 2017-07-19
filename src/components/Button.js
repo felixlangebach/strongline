@@ -27,6 +27,10 @@ export default class Button extends Component {
             classes.push("is-primary");
         }
 
+        if (disabled) {
+            classes.push("is-disabled");
+        }
+
         return classes.join(" ");
     }
 

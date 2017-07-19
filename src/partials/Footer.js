@@ -1,6 +1,9 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+
+// Components
 import Grid, { Col } from "../components/Grid";
+
+// Styles
 import "./Footer.css";
 
 export default class Footer extends Component {

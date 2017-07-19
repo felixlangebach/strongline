@@ -1,0 +1,10 @@
+.contact-button {
+    margin: 10px 0;
+    display: block;
+}
+
+@media all and (max-width: 839px) {
+    .contact-button {
+        width: 100%;
+    }
+}

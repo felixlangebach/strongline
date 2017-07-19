@@ -1,8 +1,14 @@
 import React, { Component } from "react";
 import { withRouter } from "react-router";
 import { Link } from "react-router-dom";
-import Grid, { Col } from "../components/Grid";
+import Typist from "react-typist";
+import typistConfig from "../data/typistConfig";
+
+// Layouts
 import ContentSection from "../layouts/ContentSection";
+
+// Components
+import Grid, { Col } from "../components/Grid";
 import Breadcrumb from "../components/Breadcrumb";
 
 class ErrorView extends Component {
@@ -35,7 +41,9 @@ class ErrorView extends Component {
                         </Col>
                         <Col phone={12} tablet={10} desktop={8}>
                             <p>
-                                <strong>Ihr Strongline Team</strong>
+                                <strong>
+                                    <Typist {...typistConfig}>Ihr Strongline Team</Typist>
+                                </strong>
                             </p>
                         </Col>
                     </Grid>

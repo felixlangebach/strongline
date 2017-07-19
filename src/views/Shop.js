@@ -1,7 +1,13 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import Grid, { Col } from "../components/Grid";
+import Typist from "react-typist";
+import typistConfig from "../data/typistConfig";
+
+// Layouts
 import ContentSection from "../layouts/ContentSection";
+
+// Components
+import Grid, { Col } from "../components/Grid";
 import Breadcrumb from "../components/Breadcrumb";
 
 export default class ShopView extends Component {
@@ -34,7 +40,9 @@ export default class ShopView extends Component {
                         </Col>
                         <Col phone={12} tablet={10} desktop={8}>
                             <p>
-                                <strong>Ihr Strongline Team</strong>
+                                <strong>
+                                    <Typist {...typistConfig}>Ihr Strongline Team</Typist>
+                                </strong>
                             </p>
                         </Col>
                     </Grid>

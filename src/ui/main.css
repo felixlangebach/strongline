@@ -65,6 +65,12 @@ img {
     background: #ec6248;
 }
 
+/* Typist style settings */
+
+.typed-animation-inline {
+    display: inline-block;
+}
+
 @media screen and (max-width: 1024px) {
     .mdl-layout__content {
         margin-top: 60px;

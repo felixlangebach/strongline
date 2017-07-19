@@ -1,22 +1,29 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+
+// Database
 import database from "../data/events";
+
+// Layouts
+import ContentSection from "../layouts/ContentSection";
+
+// Components
 import MaterialIcon from "../components/MaterialIcon";
 import Button from "../components/Button";
+import Newsletter from "../components/Newsletter";
 import Image from "../components/Image";
-import Form, { ExpandableInput } from "../components/Form";
-import Line from "../components/Line";
-// import Card from "../components/Card";
 import CardPackage from "../components/CardPackage";
 import EventCard from "../components/EventCard";
 import BackgroundImage from "../components/BackgroundImage";
-import Newsletter from "../partials/Newsletter";
-import ContentSection from "../layouts/ContentSection";
+import ShareBar from "../components/ShareBar";
+import Line from "../components/Line";
 import { Switch } from "../components/Form";
 import Grid, { Col, ContentWrapper as ColContent } from "../components/Grid";
 
+// Styles
 import "./Home.css";
 
+// Currency calculator data
 const currency = {
     chf: "CHF",
     eur: "EUR"
@@ -37,9 +44,11 @@ const packagePrices = {
 
 export default class HomeView extends Component {
     state = {
+        // Default currency is CHF
         currency: currency.chf
     };
 
+    // When user changes currency recalculate and rerender
     changeCurrency() {
         this.setState({
             currency: this.state.currency === currency.chf ? currency.eur : currency.chf
@@ -211,6 +220,8 @@ export default class HomeView extends Component {
                     />
                 </div>
                 <Line color="#ec6248" height={5} />
+                <ShareBar title="Werde Teil der Strongline Community" />
+                <Line color="#ec6248" height={3} />
             </div>
         );
     }

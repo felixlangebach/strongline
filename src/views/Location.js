@@ -1,11 +1,19 @@
 import React, { Component } from "react";
 import { withRouter } from "react-router";
 import { Link } from "react-router-dom";
+
+// Datasets
+import { getLocationByRegion, getLocationByRegionAndId } from "../data/locations";
+
+// Layouts
+import ContentSection from "../layouts/ContentSection";
+
+// Components
 import Breadcrumb from "../components/Breadcrumb";
 import Maps from "../components/Maps";
-import { getLocationByRegion, getLocationByRegionAndId } from "../data/locations";
+import Button from "../components/Button";
+import MaterialIcon from "../components/MaterialIcon";
 import Grid, { Col } from "../components/Grid";
-import ContentSection from "../layouts/ContentSection";
 
 class LocationView extends Component {
     renderNotFound() {
@@ -84,6 +92,17 @@ class LocationView extends Component {
                                     {data.description}
                                 </p>
                             </div>
+                        </Col>
+                        <Col phone={12} tablet={12} desktop={12}>
+                            <a
+                                href={`https://www.google.com/maps/search/?api=1&query=${data.query}`}
+                                target="_blank"
+                                rel="nofollow"
+                            >
+                                <Button>
+                                    <MaterialIcon name="navigation" /> Auf Google Maps anzeigen
+                                </Button>
+                            </a>
                         </Col>
                     </Grid>
                 </ContentSection>

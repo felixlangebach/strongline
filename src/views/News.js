@@ -1,10 +1,17 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+
+// Database
+import database from "../data/news";
+
+// Layouts
+import ContentSection from "../layouts/ContentSection";
+
+// Components
 import Breadcrumb from "../components/Breadcrumb";
 import Grid, { Col } from "../components/Grid";
 import NewsCard from "../components/NewsCard";
-import ContentSection from "../layouts/ContentSection";
-import database from "../data/news";
+import ShareBar from "../components/ShareBar";
+import Line from "../components/Line";
 
 export default class NewsView extends Component {
     render() {
@@ -55,6 +62,8 @@ export default class NewsView extends Component {
                         })}
                     </Grid>
                 </ContentSection>
+                <ShareBar title="Werde Teil der Strongline Community" />
+                <Line color="#ec6248" height={3} />
             </div>
         );
     }

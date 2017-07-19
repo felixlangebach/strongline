@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import ContentSection from "../layouts/ContentSection";
 import Form, { ExpandableInput } from "../components/Form";
 

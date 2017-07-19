@@ -2,11 +2,17 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import Typist from "react-typist";
 import typistConfig from "../data/typistConfig";
+
+// Layouts
+import ContentSection from "../layouts/ContentSection";
+
+// Components
 import Button from "../components/Button";
 import MaterialIcon from "../components/MaterialIcon";
 import Grid, { Col } from "../components/Grid";
 import Breadcrumb from "../components/Breadcrumb";
-import ContentSection from "../layouts/ContentSection";
+import ShareBar from "../components/ShareBar";
+import Line from "../components/Line";
 
 export default class AboutUsView extends Component {
     render() {
@@ -29,6 +35,13 @@ export default class AboutUsView extends Component {
                             <h2>
                                 <Typist {...typistConfig}>Über uns</Typist>
                             </h2>
+                            <p>
+                                <strong>
+                                    <Typist {...typistConfig} startDelay={1300}>
+                                        Live a strong life on a strong line
+                                    </Typist>
+                                </strong>
+                            </p>
                         </Col>
                         <Col phone={12} tablet={4} desktop={4}>
                             <p>
@@ -110,6 +123,8 @@ export default class AboutUsView extends Component {
                         </Col>
                     </Grid>
                 </ContentSection>
+                <ShareBar title="Werde Teil der Strongline Community" />
+                <Line color="#ec6248" height={3} />
             </div>
         );
     }

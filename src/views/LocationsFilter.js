@@ -1,21 +1,23 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+
+// Database
 import { getLocationByRegion } from "../data/locations";
+
+// Layouts
+import ContentSection from "../layouts/ContentSection";
+
+// Components
 import Breadcrumb from "../components/Breadcrumb";
 import Card from "../components/Card";
-import MaterialIcon from "../components/MaterialIcon";
 import Grid, { Col } from "../components/Grid";
-import ContentSection from "../layouts/ContentSection";
-import database from "../data/locations";
 
+// Styles
 import "./Locations.css";
 
 export default class LocationsView extends Component {
     render() {
         const region = this.props.match.params.region;
         const dataset = getLocationByRegion(region);
-
-        console.log(dataset);
 
         return (
             <div className="locations-view">

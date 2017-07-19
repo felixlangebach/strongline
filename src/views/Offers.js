@@ -1,10 +1,15 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+
+// Database
+import database from "../data/events";
+
+// Layouts
+import ContentSection from "../layouts/ContentSection";
+
+// Components
 import Breadcrumb from "../components/Breadcrumb";
 import Grid, { Col } from "../components/Grid";
 import EventCard from "../components/EventCard";
-import ContentSection from "../layouts/ContentSection";
-import database from "../data/events";
 
 export default class OffersView extends Component {
     render() {

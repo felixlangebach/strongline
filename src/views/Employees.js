@@ -1,9 +1,17 @@
 import React, { Component } from "react";
+
+// Database
+import database from "../data/employees";
+
+// Layouts
+import ContentSection from "../layouts/ContentSection";
+
+// Components
 import List from "../components/List";
 import Breadcrumb from "../components/Breadcrumb";
+import ShareBar from "../components/ShareBar";
+import Line from "../components/Line";
 import Grid, { Col } from "../components/Grid";
-import ContentSection from "../layouts/ContentSection";
-import database from "../data/employees";
 
 export default class EmployeesView extends Component {
     render() {
@@ -44,6 +52,8 @@ export default class EmployeesView extends Component {
                         </Col>
                     </Grid>
                 </ContentSection>
+                <ShareBar title="Werde Teil der Strongline Community" />
+                <Line color="#ec6248" height={3} />
             </div>
         );
     }
