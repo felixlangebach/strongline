@@ -1,4 +1,4 @@
-# Informationen
+# Wichtige Informationen
 
 ## Verwendete Frameworks
 
@@ -94,6 +94,21 @@ Diese Datei definiert das verhalten der ganzen Applikation. Hier werden die URLs
 Diese Datei registriert einen [ServiceWorker](https://developers.google.com/web/fundamentals/getting-started/primers/service-workers). Dieser ServiceWorker cached automatisch alle lokalen Assets und hält diese auf dem neusten Stand Laufenden.
 Es wird hier auf die [Cache-first-Strategie](https://developers.google.com/web/fundamentals/instant-and-offline/offline-cookbook/#cache-falling-back-to-network) gesetzt. Dieser garantiert eine zuverlässige Applikation in stabilen oder unzuverlässigen Netzwerken.
 
+## Applikation lokal starten (Entwicklungsstand, Code)
+
+1. [Node.js in der Version 6.x herunterladen](https://nodejs.org/en/download/package-manager/) und installieren
+2. Via Kommandozeile in das Verzeichnis `strongline-release/solution` wechseln
+3. Führen Sie die Kommandos `npm install` und danach `npm start` aus
+4. Öffnen Sie die URL welche in der Kommandozeile angegeben ist
+
+## Applikation builden (Standlone Version)
+
+1. [Node.js in der Version 6.x herunterladen](https://nodejs.org/en/download/package-manager/) und installieren
+2. Via Kommandozeile in das Verzeichnis `strongline-release/solution` wechseln
+3. Führen Sie die Kommandos `npm install` und danach `npm run build` aus
+4. Kopieren Sie den Ordner `strongline-release/solution/build` in den Webserver Ihrer Wahl
+
+> Alternativ kann via NPM ein simpler Server installiert werden **(Empfohlen)**, führen Sie dazu die nachfolgenden Kommandos aus: `npm install -g http-server && http-server ./build`
 
 # Über React + Setup (Englisch)
 
