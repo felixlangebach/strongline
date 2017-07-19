@@ -104,13 +104,12 @@ class LocationView extends Component {
                                     <br />
                                 </p>
                                 <hr />
-                                <p>
-                                    {template(data.description, {
-                                        company: data.company,
-                                        region: parentData.title,
-                                        address: data.contact.address
-                                    })}
-                                </p>
+
+                                {template(data.description, {
+                                    company: data.company,
+                                    region: parentData.title,
+                                    address: data.contact.address
+                                })}
                             </div>
                         </Col>
                         <Col phone={12} tablet={12} desktop={12}>

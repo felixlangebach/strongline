@@ -12,7 +12,10 @@ const database = {
                     address: "Musterstrasse 33",
                     location: "St. Gallen, Schweiz"
                 },
-                description: "Informationstext kommt hier hin",
+                description: [
+                    "Die Filiale {company} befindet sich an der {address}. Gerne heissen wir Sie in {region} Willkommen.",
+                    "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+                ],
                 shortDescription:
                     "Besuchen Sie uns in unsere Filiale Strongline Stadt SG. Wir freuen uns auf Ihren Besuch."
             },
@@ -25,7 +28,10 @@ const database = {
                     address: "Musterstrasse 33",
                     location: "St. Gallen, Schweiz"
                 },
-                description: "Informationstext kommt hier hin",
+                description: [
+                    "Die Filiale {company} befindet sich an der {address}. Gerne heissen wir Sie in {region} Willkommen.",
+                    "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+                ],
                 shortDescription: "Besuchen Sie uns in unsere Filiale {company}. Wir freuen uns auf Ihren Besuch."
             }
         }
@@ -41,7 +47,10 @@ const database = {
                     address: "Musterstrasse 33",
                     location: "Zürich Kreis 1, Schweiz"
                 },
-                description: "Informationstext kommt hier hin",
+                description: [
+                    "Die Filiale {company} befindet sich an der {address}. Gerne heissen wir Sie in {region} Willkommen.",
+                    "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+                ],
                 shortDescription: "Besuchen Sie uns in unsere Filiale {company}. Wir freuen uns auf Ihren Besuch."
             },
             "city-kreis-2": {
@@ -52,7 +61,10 @@ const database = {
                     address: "Musterstrasse 33",
                     location: "Zürich Kreis 2, Schweiz"
                 },
-                description: "Informationstext kommt hier hin",
+                description: [
+                    "Die Filiale {company} befindet sich an der {address}. Gerne heissen wir Sie in {region} Willkommen.",
+                    "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+                ],
                 shortDescription: "Besuchen Sie uns in unsere Filiale {company}. Wir freuen uns auf Ihren Besuch."
             },
             "city-kreis-3": {
@@ -63,7 +75,10 @@ const database = {
                     address: "Musterstrasse 33",
                     location: "Zürich Kreis 3, Schweiz"
                 },
-                description: "Informationstext kommt hier hin",
+                description: [
+                    "Die Filiale {company} befindet sich an der {address}. Gerne heissen wir Sie in {region} Willkommen.",
+                    "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+                ],
                 shortDescription: "Besuchen Sie uns in unsere Filiale {company}. Wir freuen uns auf Ihren Besuch."
             }
         }
@@ -79,7 +94,10 @@ const database = {
                     address: "Musterstrasse 33",
                     location: "Dietikon, Schweiz"
                 },
-                description: "Informationstext kommt hier hin",
+                description: [
+                    "Die Filiale {company} befindet sich an der {address}. Gerne heissen wir Sie in {region} Willkommen.",
+                    "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+                ],
                 shortDescription: "Besuchen Sie uns in unsere Filiale {company}. Wir freuen uns auf Ihren Besuch."
             }
         }
@@ -95,7 +113,10 @@ const database = {
                     address: "Musterstrasse 33",
                     location: "Genf, Schweiz"
                 },
-                description: "Informationstext kommt hier hin",
+                description: [
+                    "Die Filiale {company} befindet sich an der {address}. Gerne heissen wir Sie in {region} Willkommen.",
+                    "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+                ],
                 shortDescription: "Besuchen Sie uns in unsere Filiale {company}. Wir freuen uns auf Ihren Besuch."
             },
             "genf-see": {
@@ -106,7 +127,10 @@ const database = {
                     address: "Musterstrasse 33",
                     location: "Genf See, Schweiz"
                 },
-                description: "Informationstext kommt hier hin",
+                description: [
+                    "Die Filiale {company} befindet sich an der {address}. Gerne heissen wir Sie in {region} Willkommen.",
+                    "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+                ],
                 shortDescription: "Besuchen Sie uns in unsere Filiale {company}. Wir freuen uns auf Ihren Besuch."
             },
             "genf-west": {
@@ -117,7 +141,10 @@ const database = {
                     address: "Musterstrasse 33",
                     location: "Genf, Schweiz"
                 },
-                description: "Informationstext kommt hier hin",
+                description: [
+                    "Die Filiale {company} befindet sich an der {address}. Gerne heissen wir Sie in {region} Willkommen.",
+                    "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+                ],
                 shortDescription: "Besuchen Sie uns in unsere Filiale {company}. Wir freuen uns auf Ihren Besuch."
             }
         }
@@ -133,7 +160,10 @@ const database = {
                     address: "Musterstrasse 33",
                     location: "Chur, Schweiz"
                 },
-                description: "Informationstext kommt hier hin",
+                description: [
+                    "Die Filiale {company} befindet sich an der {address}. Gerne heissen wir Sie in {region} Willkommen.",
+                    "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+                ],
                 shortDescription: "Besuchen Sie uns in unsere Filiale {company}. Wir freuen uns auf Ihren Besuch."
             },
             "chur-west": {
@@ -144,7 +174,10 @@ const database = {
                     address: "Musterstrasse 33",
                     location: "Chur West, Schweiz"
                 },
-                description: "Informationstext kommt hier hin",
+                description: [
+                    "Die Filiale {company} befindet sich an der {address}. Gerne heissen wir Sie in {region} Willkommen.",
+                    "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+                ],
                 shortDescription: "Besuchen Sie uns in unsere Filiale {company}. Wir freuen uns auf Ihren Besuch."
             }
         }
@@ -160,7 +193,10 @@ const database = {
                     address: "Musterstrasse 33",
                     location: "St. Moritz, Schweiz"
                 },
-                description: "Informationstext kommt hier hin",
+                description: [
+                    "Die Filiale {company} befindet sich an der {address}. Gerne heissen wir Sie in {region} Willkommen.",
+                    "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+                ],
                 shortDescription: "Besuchen Sie uns in unsere Filiale {company}. Wir freuen uns auf Ihren Besuch."
             }
         }
@@ -176,7 +212,10 @@ const database = {
                     address: "Musterstrasse 33",
                     location: "Arosa, Schweiz"
                 },
-                description: "Informationstext kommt hier hin",
+                description: [
+                    "Die Filiale {company} befindet sich an der {address}. Gerne heissen wir Sie in {region} Willkommen.",
+                    "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+                ],
                 shortDescription: "Besuchen Sie uns in unsere Filiale {company}. Wir freuen uns auf Ihren Besuch."
             }
         }
@@ -192,7 +231,10 @@ const database = {
                     address: "Musterstrasse 33",
                     location: "Kreuzlingn, Schweiz"
                 },
-                description: "Informationstext kommt hier hin",
+                description: [
+                    "Die Filiale {company} befindet sich an der {address}. Gerne heissen wir Sie in {region} Willkommen.",
+                    "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+                ],
                 shortDescription: "Besuchen Sie uns in unsere Filiale {company}. Wir freuen uns auf Ihren Besuch."
             }
         }
@@ -208,7 +250,10 @@ const database = {
                     address: "Musterstrasse 33",
                     location: "Wil, Schweiz"
                 },
-                description: "Informationstext kommt hier hin",
+                description: [
+                    "Die Filiale {company} befindet sich an der {address}. Gerne heissen wir Sie in {region} Willkommen.",
+                    "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+                ],
                 shortDescription: "Besuchen Sie uns in unsere Filiale {company}. Wir freuen uns auf Ihren Besuch."
             }
         }
@@ -224,7 +269,10 @@ const database = {
                     address: "Musterstrasse 33",
                     location: "Andermatt, Schweiz"
                 },
-                description: "Informationstext kommt hier hin",
+                description: [
+                    "Die Filiale {company} befindet sich an der {address}. Gerne heissen wir Sie in {region} Willkommen.",
+                    "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+                ],
                 shortDescription: "Besuchen Sie uns in unsere Filiale {company}. Wir freuen uns auf Ihren Besuch."
             }
         }
@@ -240,7 +288,10 @@ const database = {
                     address: "Musterstrasse 33",
                     location: "Frauenfeld, Schweiz"
                 },
-                description: "Informationstext kommt hier hin",
+                description: [
+                    "Die Filiale {company} befindet sich an der {address}. Gerne heissen wir Sie in {region} Willkommen.",
+                    "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+                ],
                 shortDescription: "Besuchen Sie uns in unsere Filiale {company}. Wir freuen uns auf Ihren Besuch."
             }
         }
@@ -256,7 +307,10 @@ const database = {
                     address: "Musterstrasse 33",
                     location: "Bern, Schweiz"
                 },
-                description: "Informationstext kommt hier hin",
+                description: [
+                    "Die Filiale {company} befindet sich an der {address}. Gerne heissen wir Sie in {region} Willkommen.",
+                    "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+                ],
                 shortDescription: "Besuchen Sie uns in unsere Filiale {company}. Wir freuen uns auf Ihren Besuch."
             },
             "bern-west": {
@@ -267,7 +321,10 @@ const database = {
                     address: "Musterstrasse 33",
                     location: "Bern, Schweiz"
                 },
-                description: "Informationstext kommt hier hin",
+                description: [
+                    "Die Filiale {company} befindet sich an der {address}. Gerne heissen wir Sie in {region} Willkommen.",
+                    "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+                ],
                 shortDescription: "Besuchen Sie uns in unsere Filiale {company}. Wir freuen uns auf Ihren Besuch."
             },
             "bern-ost": {
@@ -278,7 +335,10 @@ const database = {
                     address: "Musterstrasse 33",
                     location: "Bern, Schweiz"
                 },
-                description: "Informationstext kommt hier hin",
+                description: [
+                    "Die Filiale {company} befindet sich an der {address}. Gerne heissen wir Sie in {region} Willkommen.",
+                    "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+                ],
                 shortDescription: "Besuchen Sie uns in unsere Filiale {company}. Wir freuen uns auf Ihren Besuch."
             }
         }
@@ -294,7 +354,10 @@ const database = {
                     address: "Musterstrasse 33",
                     location: "Pfäffikon, Schweiz"
                 },
-                description: "Informationstext kommt hier hin",
+                description: [
+                    "Die Filiale {company} befindet sich an der {address}. Gerne heissen wir Sie in {region} Willkommen.",
+                    "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+                ],
                 shortDescription: "Besuchen Sie uns in unsere Filiale {company}. Wir freuen uns auf Ihren Besuch."
             },
             "pfaeffikon-west": {
@@ -305,7 +368,10 @@ const database = {
                     address: "Musterstrasse 33",
                     location: "Pfäffikon, Schweiz"
                 },
-                description: "Informationstext kommt hier hin",
+                description: [
+                    "Die Filiale {company} befindet sich an der {address}. Gerne heissen wir Sie in {region} Willkommen.",
+                    "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+                ],
                 shortDescription: "Besuchen Sie uns in unsere Filiale {company}. Wir freuen uns auf Ihren Besuch."
             }
         }
@@ -321,7 +387,10 @@ const database = {
                     address: "Musterstrasse 33",
                     location: "Richterswil, Schweiz"
                 },
-                description: "Informationstext kommt hier hin",
+                description: [
+                    "Die Filiale {company} befindet sich an der {address}. Gerne heissen wir Sie in {region} Willkommen.",
+                    "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+                ],
                 shortDescription: "Besuchen Sie uns in unsere Filiale {company}. Wir freuen uns auf Ihren Besuch."
             }
         }
@@ -337,7 +406,10 @@ const database = {
                     address: "Musterstrasse 33",
                     location: "Dietlikon, Schweiz"
                 },
-                description: "Informationstext kommt hier hin",
+                description: [
+                    "Die Filiale {company} befindet sich an der {address}. Gerne heissen wir Sie in {region} Willkommen.",
+                    "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+                ],
                 shortDescription: "Besuchen Sie uns in unsere Filiale {company}. Wir freuen uns auf Ihren Besuch."
             }
         }
@@ -353,7 +425,10 @@ const database = {
                     address: "Musterstrasse 33",
                     location: "Laax, Schweiz"
                 },
-                description: "Informationstext kommt hier hin",
+                description: [
+                    "Die Filiale {company} befindet sich an der {address}. Gerne heissen wir Sie in {region} Willkommen.",
+                    "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+                ],
                 shortDescription: "Besuchen Sie uns in unsere Filiale {company}. Wir freuen uns auf Ihren Besuch."
             }
         }
