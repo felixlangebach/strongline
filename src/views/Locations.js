@@ -5,6 +5,9 @@ import { Helmet } from "react-helmet";
 // Database
 import database from "../data/locations";
 
+// Helpers
+import template from "../helper/template";
+
 // Layouts
 import ContentSection from "../layouts/ContentSection";
 
@@ -89,7 +92,9 @@ export default class LocationsView extends Component {
                                                 <Col phone={12} tablet={4} desktop={4} key={slug}>
                                                     <Card
                                                         title={center.company}
-                                                        text={center.shortDescription}
+                                                        text={template(center.shortDescription, {
+                                                            company: center.company
+                                                        })}
                                                         button={{
                                                             text: "Details",
                                                             link: `/standorte/${dataset.slug}/${slug}`
