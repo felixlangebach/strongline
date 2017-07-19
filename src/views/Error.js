@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { withRouter } from "react-router";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import Typist from "react-typist";
 import typistConfig from "../data/typistConfig";
 
@@ -15,6 +16,9 @@ class ErrorView extends Component {
     render() {
         return (
             <div data-view="ShopView">
+                <Helmet>
+                    <title>Strongline - Hier ist nichts ...</title>
+                </Helmet>
                 <Breadcrumb
                     links={[
                         {

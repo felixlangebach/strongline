@@ -19,7 +19,7 @@ export default class Grid extends Component {
 
 export class Col extends Component {
     get classes() {
-        const { desktop, tablet, phone } = this.props;
+        const { modifier, desktop, tablet, phone } = this.props;
         const classes = ["mdl-cell"];
 
         if (desktop) {
@@ -32,6 +32,10 @@ export class Col extends Component {
 
         if (phone) {
             classes.push(`mdl-cell--${phone}-col-phone`);
+        }
+
+        if (modifier) {
+            classes.push(`mdl-cell--${modifier}`);
         }
 
         return classes.join(" ");

@@ -1,3 +1,9 @@
+.card-package {
+    width: 100%;
+    max-width: 500px;
+    margin: 10px auto;
+}
+
 .card-package-contents {
     list-style: none;
     padding: 0;

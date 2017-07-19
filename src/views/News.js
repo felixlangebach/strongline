@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Helmet } from "react-helmet";
 
 // Database
 import database from "../data/news";
@@ -17,6 +18,9 @@ export default class NewsView extends Component {
     render() {
         return (
             <div data-view="NewsView">
+                <Helmet>
+                    <title>Strongline - News</title>
+                </Helmet>
                 <Breadcrumb
                     links={[
                         {

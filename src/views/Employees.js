@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Helmet } from "react-helmet";
 
 // Database
 import database from "../data/employees";
@@ -17,6 +18,9 @@ export default class EmployeesView extends Component {
     render() {
         return (
             <div data-view="EmployeesView">
+                <Helmet>
+                    <title>Strongline - Mitarbeiter</title>
+                </Helmet>
                 <Breadcrumb
                     links={[
                         {

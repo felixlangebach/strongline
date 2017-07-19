@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Helmet } from "react-helmet";
 
 // Database
 import database from "../data/events";
@@ -15,6 +16,11 @@ export default class OffersView extends Component {
     render() {
         return (
             <div data-view="OffersView">
+                <Helmet>
+                    <title>
+                        {`Strongline - Angebote - ${database.length} verfügbar`}
+                    </title>
+                </Helmet>
                 <Breadcrumb
                     links={[
                         {
@@ -34,9 +40,12 @@ export default class OffersView extends Component {
                             </h2>
                         </Col>
                         {database.length === 0
-                            ? <p>
-                                  <a href="/angebote">Bitte Seite neu laden</a>
-                              </p>
+                            ? <Col phone={12} tablet={12} desktop={12}>
+                                  <p>
+                                      Fehler bei der Datenverarbeitung,{" "}
+                                      <a href="/angebote">bitte laden Sie die Seite erneut</a>.
+                                  </p>
+                              </Col>
                             : null}
                         {database.map((data, index) => {
                             return (

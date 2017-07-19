@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 // Database
 import database from "../data/events";
@@ -58,6 +59,9 @@ export default class HomeView extends Component {
     render() {
         return (
             <div data-view="HomeView">
+                <Helmet>
+                    <title>Strongline - Herzlich Willkommen</title>
+                </Helmet>
                 <BackgroundImage src="stage/pexels-photo-260409.jpeg" size={700} />
                 <Line color="#ec6248" height={5} />
                 <ContentSection modifier="spaced-title">
@@ -88,13 +92,31 @@ export default class HomeView extends Component {
                     </Grid>
                 </ContentSection>
                 <Grid spacing={false}>
-                    <Col phone={12} tablet={6} desktop={6} key="image">
-                        <Image src="stage/pexels-photo-260409.jpeg" alt="Side Image" />
+                    <Col modifier="fill-image" phone={12} tablet={12} desktop={6} key="image">
+                        <Image src="stage/pexels-photo-442496.jpeg" alt="Side Image" />
                     </Col>
-                    <Col phone={12} tablet={6} desktop={6} key="text">
+                    <Col phone={12} tablet={12} desktop={6} key="text">
                         <ColContent>
-                            <h3>Some title</h3>
-                            <p>Lorem Ipsum Dolor</p>
+                            <h3>In Ihr neues Leben starten</h3>
+                            <p>
+                                The hope of a skinny kid with a funny name who believes that America
+                                has a place for him, too. Threatening Israel with destruction - or
+                                repeating vile stereotypes about Jews - is deeply wrong, and only
+                                serves to evoke in the minds of Israelis this most painful of
+                                memories while preventing the peace that the people of this region
+                                deserve.
+                            </p>
+                            <p>
+                                But this much is clear: governments that protect these rights are
+                                ultimately more stable, successful and secure. But it should be
+                                their choice.
+                            </p>
+                            <p>
+                                So let's rededicate ourselves to a new kind of politics - a politics
+                                of conscience. I would not be running for President if I didn't
+                                believe with all my heart that this is what the vast majority of
+                                Americans want for this country. Many bring up a specific issue.
+                            </p>
                         </ColContent>
                     </Col>
                 </Grid>
@@ -102,51 +124,102 @@ export default class HomeView extends Component {
                     <ContentSection modifier="spaced-inner">
                         <Grid>
                             <Col phone={12} tablet={8} desktop={6}>
-                                <h5>Some Title here</h5>
+                                <h5>Wir heissen Sie herzlich Willkommen!</h5>
                                 <p>
-                                    Lorem Ipsum dolor sit amet ... Lorem Ipsum dolor sit amet ...
-                                    Lorem Ipsum dolor sit amet ... Lorem Ipsum dolor sit amet ...
-                                    Lorem Ipsum dolor sit amet ... Lorem Ipsum dolor sit amet ...
-                                    Lorem Ipsum dolor sit amet ... Lorem Ipsum dolor sit amet ...
-                                    Lorem Ipsum dolor sit amet ... Lorem Ipsum dolor sit amet ...
+                                    That we can tuck in our children at night and know that they are
+                                    fed and clothed and safe from harm. It's a journey that takes us
+                                    back to our nation's founding, when none other than a UCC church
+                                    inspired the Boston Tea Party and helped bring an Empire to its
+                                    knees. "People began to shout, to rise from their seats and clap
+                                    and cry out, a forceful wind carrying the reverend's voice up
+                                    into the rafters....And in that single note - hope! - I heard
+                                    something else; at the foot of that cross, inside the thousands
+                                    of churches across the city, I imagined the stories of ordinary
+                                    black people merging with the stories of David and Goliath,
+                                    Moses and Pharaoh, the Christians in the lion's den, Ezekiel's
+                                    field of dry bones. And nothing will change. These challenges
+                                    are not all of government's making. I know there is debate about
+                                    this issue.
                                 </p>
                                 <p>
-                                    Lorem Ipsum dolor sit amet ... Lorem Ipsum dolor sit amet ...
-                                    Lorem Ipsum dolor sit amet ... Lorem Ipsum dolor sit amet ...
-                                    Lorem Ipsum dolor sit amet ... Lorem Ipsum dolor sit amet ...
-                                    Lorem Ipsum dolor sit amet ... Lorem Ipsum dolor sit amet ...
-                                    Lorem Ipsum dolor sit amet ... Lorem Ipsum dolor sit amet ...
+                                    I'd been inspired by the civil rights movement - by all the
+                                    clear-eyed, straight-backed, courageous young people who'd
+                                    boarded buses and traveled down South to march and sit at lunch
+                                    counters, and lay down their lives in some cases for freedom.
+                                    And it puts the lie to the notion that the separation of church
+                                    and state in America means faith should have no role in public
+                                    life. Two hundred and twenty one years ago, in a hall that still
+                                    stands across the street, a group of men gathered and, with
+                                    these simple words, launched America's improbable experiment in
+                                    democracy. You understand that in this election, the greatest
+                                    risk we can take is to try the same old politics with the same
+                                    old players and expect a different result.
                                 </p>
                             </Col>
                             <Col phone={12} tablet={8} desktop={6}>
-                                <h5>Some Title here</h5>
+                                <h5>Weitere Informationen zu Strongline</h5>
                                 <p>
-                                    Lorem Ipsum dolor sit amet ... Lorem Ipsum dolor sit amet ...
-                                    Lorem Ipsum dolor sit amet ... Lorem Ipsum dolor sit amet ...
-                                    Lorem Ipsum dolor sit amet ... Lorem Ipsum dolor sit amet ...
-                                    Lorem Ipsum dolor sit amet ... Lorem Ipsum dolor sit amet ...
-                                    Lorem Ipsum dolor sit amet ... Lorem Ipsum dolor sit amet ...
+                                    Religious leaders like my friends Rev. Jim Wallis and Rabbi
+                                    David Saperstein and Nathan Diament are working for justice and
+                                    fighting for change. Consensus and compromise will not come
+                                    easy. And the lack of basic services in so many urban black
+                                    neighborhoods - parks for kids to play in, police walking the
+                                    beat, regular garbage pick-up and building code enforcement -
+                                    all helped create a cycle of violence, blight and neglect that
+                                    continue to haunt us. But it is where we start. That's the
+                                    change we need right now.
                                 </p>
                                 <p>
-                                    Lorem Ipsum dolor sit amet ... Lorem Ipsum dolor sit amet ...
-                                    Lorem Ipsum dolor sit amet ... Lorem Ipsum dolor sit amet ...
-                                    Lorem Ipsum dolor sit amet ... Lorem Ipsum dolor sit amet ...
-                                    Lorem Ipsum dolor sit amet ... Lorem Ipsum dolor sit amet ...
-                                    Lorem Ipsum dolor sit amet ... Lorem Ipsum dolor sit amet ...
+                                    God is still speaking. We may not agree on abortion, but surely
+                                    we can agree on reducing the number of unwanted pregnancies in
+                                    this country. A belief that there are better days ahead. And
+                                    because she had to miss days of work, she was let go and lost
+                                    her health care.
+                                </p>
+                                <p>
+                                    But somehow, somewhere along the way, faith stopped being used
+                                    to bring us together and started being used to drive us apart.
+                                    Hamas does have support among some Palestinians, but they also
+                                    have responsibilities.
                                 </p>
                             </Col>
                         </Grid>
                     </ContentSection>
                 </div>
                 <Grid spacing={false}>
-                    <Col phone={12} tablet={6} desktop={6} key="text">
+                    <Col phone={12} tablet={12} desktop={6} key="text">
                         <ColContent align="right">
-                            <h3>Some title</h3>
-                            <p>Lorem Ipsum Dolor</p>
+                            <h3>Mit Kampfsport den Weg zum inneren Selbst neu entdecken</h3>
+                            <p>
+                                At every opportunity, they've told evangelical Christians that
+                                Democrats disrespect their values and dislike their Church, while
+                                suggesting to the rest of the country that religious Americans care
+                                only about issues like abortion and gay marriage; school prayer and
+                                intelligent design. In the end, then, what is called for is nothing
+                                more, and nothing less, than what all the world's great religions
+                                demand - that we do unto others as we would have them do unto us.
+                                The issues that I have described will not be easy to address.
+                            </p>
+
+                            <p>
+                                My mother, whose parents were non-practicing Baptists and
+                                Methodists, was one of the most spiritual souls I ever knew. In my
+                                first book, Dreams From My Father, I described the experience of my
+                                first service at Trinity: That is true genius of this nation. And
+                                then another one.
+                            </p>
+
+                            <p>
+                                If you're working forty hours a week, you shouldn't be living in
+                                poverty. I know there are those who dismiss such beliefs as happy
+                                talk. We have the power to make the world we seek, but only if we
+                                have the courage to make a new beginning, keeping in mind what has
+                                been written.
+                            </p>
                         </ColContent>
                     </Col>
-                    <Col phone={12} tablet={6} desktop={6} key="image">
-                        <Image src="stage/pexels-photo-260409.jpeg" alt="Side Image" />
+                    <Col modifier="fill-image" phone={12} tablet={12} desktop={6} key="image">
+                        <Image src="stage/pexels-photo-260447.jpeg" alt="Side Image" />
                     </Col>
                 </Grid>
                 <Line color="#ec6248" height={5} />
@@ -175,7 +248,7 @@ export default class HomeView extends Component {
                                     />
                                 </p>
                             </Col>
-                            <Col phone={12} tablet={6} desktop={4} key="package-1">
+                            <Col phone={12} tablet={12} desktop={4} key="package-1">
                                 <CardPackage
                                     title="Bronze"
                                     price={packagePrices[this.state.currency].bronze}
@@ -186,7 +259,7 @@ export default class HomeView extends Component {
                                     currency={this.state.currency}
                                 />
                             </Col>
-                            <Col phone={12} tablet={6} desktop={4} key="package-2">
+                            <Col phone={12} tablet={12} desktop={4} key="package-2">
                                 <CardPackage
                                     title="Silver"
                                     price={packagePrices[this.state.currency].silver}
@@ -197,7 +270,7 @@ export default class HomeView extends Component {
                                     currency={this.state.currency}
                                 />
                             </Col>
-                            <Col phone={12} tablet={6} desktop={4} key="package-3">
+                            <Col phone={12} tablet={12} desktop={4} key="package-3">
                                 <CardPackage
                                     title="Gold"
                                     price={packagePrices[this.state.currency].gold}

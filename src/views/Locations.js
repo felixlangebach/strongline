@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 // Database
 import database from "../data/locations";
@@ -20,7 +21,6 @@ import "./Locations.css";
 
 export default class LocationsView extends Component {
     generateLocationDatasets() {
-        console.log("generate sets", database);
         const sets = [];
 
         for (let slug in database) {
@@ -38,6 +38,9 @@ export default class LocationsView extends Component {
 
         return (
             <div className="locations-view">
+                <Helmet>
+                    <title>Strongline - Alle Standorte</title>
+                </Helmet>
                 <Breadcrumb
                     links={[
                         {

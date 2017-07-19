@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import Typist from "react-typist";
 import typistConfig from "../data/typistConfig";
 
@@ -18,6 +19,9 @@ export default class AboutUsView extends Component {
     render() {
         return (
             <div data-view="AboutUsView">
+                <Helmet>
+                    <title>Strongline - Über uns</title>
+                </Helmet>
                 <Breadcrumb
                     links={[
                         {
