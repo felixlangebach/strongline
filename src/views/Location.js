@@ -6,6 +6,9 @@ import { Helmet } from "react-helmet";
 // Datasets
 import { getLocationByRegion, getLocationByRegionAndId } from "../data/locations";
 
+// Helper
+import template from "../helper/template";
+
 // Layouts
 import ContentSection from "../layouts/ContentSection";
 
@@ -102,7 +105,11 @@ class LocationView extends Component {
                                 </p>
                                 <hr />
                                 <p>
-                                    {data.description}
+                                    {template(data.description, {
+                                        company: data.company,
+                                        region: parentData.title,
+                                        address: data.contact.address
+                                    })}
                                 </p>
                             </div>
                         </Col>

@@ -1,4 +1,4 @@
-const template = (value, data, preventHtmlEncoding = false) => {
+const template = (value = "", data = {}) => {
     if (typeof value !== "string") {
         return "";
     } else if (typeof data !== "object") {

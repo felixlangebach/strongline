@@ -93,7 +93,8 @@ export default class LocationsView extends Component {
                                                     <Card
                                                         title={center.company}
                                                         text={template(center.shortDescription, {
-                                                            company: center.company
+                                                            company: center.company,
+                                                            region: dataset.title
                                                         })}
                                                         button={{
                                                             text: "Details",
