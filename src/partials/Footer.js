@@ -9,7 +9,7 @@ export default class Footer extends Component {
             <footer className="mdl-custom-footer">
                 <Grid spacing={false}>
                     <Col phone={12} tablet={12} desktop={12}>
-                        2017 &copy; Stronglife Ltd.
+                        2017 &copy; Strongline Ltd.
                     </Col>
                 </Grid>
             </footer>

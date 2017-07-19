@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Icon from "./Icon";
+import MaterialIcon from "./MaterialIcon";
 
 import "./EventCard.css";
 
@@ -27,7 +27,7 @@ export default class Card extends Component {
                         Hinzufügen
                     </a>
                     <div className="mdl-layout-spacer" />
-                    <Icon name="event" />
+                    <MaterialIcon name="event" />
                 </div>
             </div>
         );

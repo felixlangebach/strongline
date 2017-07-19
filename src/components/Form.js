@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Button from "./Button";
-import Icon from "./Icon";
+import MaterialIcon from "./MaterialIcon";
 import "./Form.css";
 
 export default class Form extends Component {
@@ -54,7 +54,7 @@ export const ExpandableInput = ({
 }) =>
     <div className="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
         <label className="mdl-button mdl-js-button mdl-button--icon" htmlFor={icon}>
-            <Icon name={icon} />
+            <MaterialIcon name={icon} />
         </label>
         <div className="mdl-textfield__expandable-holder">
             <input

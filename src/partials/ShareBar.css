@@ -1,0 +1,25 @@
+.share-bar {
+    padding: 20px 0;
+    text-align: center;
+    background-color: #fefefe;
+}
+
+.share-bar > h4 {
+    margin-top: 10px;
+}
+
+.share-bar__link {
+    vertical-align: baseline;
+    font-size: 25px;
+    line-height: 35px;
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    color: #fff;
+    background-color: #ec6248;
+    padding: 3px;
+    margin: 10px;
+    border-radius: 35px;
+    -moz-border-radius: 35px;
+    -webkit-border-radius: 35px;
+}

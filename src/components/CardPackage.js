@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import Icon from "../components/Icon";
+import MaterialIcon from "../components/MaterialIcon";
 import Chip from "../components/Chip";
 import Line from "../components/Line";
 
@@ -32,7 +32,7 @@ export default class Card extends Component {
             >
                 <div className="mdl-card__title" style={styles}>
                     <h2 className="mdl-card__title-text card-package-title">
-                        <Icon name={icon} />
+                        <MaterialIcon name={icon} />
                     </h2>
                 </div>
                 <Line color="rgba(0,0,0,.1)" height={1} />

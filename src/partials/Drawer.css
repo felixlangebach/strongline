@@ -1,3 +1,7 @@
 .mdl-layout__drawer-button .material-icons {
     color: #ffffff;
 }
+
+.mdl-layout__drawer-button {
+    z-index: 200;
+}

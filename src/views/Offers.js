@@ -22,10 +22,12 @@ export default class OffersView extends Component {
                     ]}
                 />
                 <ContentSection>
-                    <h2>
-                        Angebote <small>({database.length})</small>
-                    </h2>
                     <Grid>
+                        <Col phone={12} tablet={12} desktop={12}>
+                            <h2>
+                                Angebote <small>({database.length})</small>
+                            </h2>
+                        </Col>
                         {database.length === 0
                             ? <p>
                                   <a href="/angebote">Bitte Seite neu laden</a>

@@ -33,3 +33,15 @@
 .content-section--width-x-small {
     max-width: 500px;
 }
+
+@media all and (max-width: 1024px) {
+    .content-section {
+        max-width: 100%;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .content-section:not(.content-section--keep-spacing) {
+        width: 100%;
+    }
+}

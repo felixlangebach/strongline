@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import Icon from "../components/Icon";
+import MaterialIcon from "../components/MaterialIcon";
 
 export default class Card extends Component {
     static defaultProps = {
@@ -34,7 +34,7 @@ export default class Card extends Component {
                 </div>
                 <div className="mdl-card__menu">
                     <button className="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-                        <Icon name={this.props.icon} />
+                        <MaterialIcon name={this.props.icon} />
                     </button>
                 </div>
             </div>

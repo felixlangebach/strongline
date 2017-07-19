@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import Icon from "../components/Icon";
+import MaterialIcon from "../components/MaterialIcon";
 
 import "./Drawer.css";
 
@@ -23,7 +23,7 @@ export default class Header extends Component {
 
             linkNodes.push(
                 <Link className="mdl-navigation__link" key={index} to={href} onClick={delegate}>
-                    {icon && <Icon name={icon} />}
+                    {icon && <MaterialIcon name={icon} />}
                     {text}
                 </Link>
             );

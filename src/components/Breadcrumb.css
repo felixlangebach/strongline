@@ -32,3 +32,13 @@
 .breadcrumb .breadcrumb-item:last-of-type::after {
     content: "";
 }
+
+@media all and (max-width: 1024px) {
+    .breadcrumb {
+        padding: 7px;
+    }
+
+    .breadcrumb-list {
+        font-size: 12px;
+    }
+}

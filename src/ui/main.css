@@ -66,5 +66,7 @@ img {
 }
 
 @media screen and (max-width: 1024px) {
-    /* TBD */
+    .mdl-layout__content {
+        margin-top: 60px;
+    }
 }

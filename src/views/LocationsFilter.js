@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { getLocationByRegion } from "../data/locations";
 import Breadcrumb from "../components/Breadcrumb";
 import Card from "../components/Card";
-import Icon from "../components/Icon";
+import MaterialIcon from "../components/MaterialIcon";
 import Grid, { Col } from "../components/Grid";
 import ContentSection from "../layouts/ContentSection";
 import database from "../data/locations";
@@ -35,13 +35,14 @@ export default class LocationsView extends Component {
                     ]}
                 />
                 <ContentSection>
-                    <h2>
-                        <span className="mdl-badge" data-badge={Object.keys(dataset.list).length}>
-                            Standorte in {dataset.title}
-                        </span>
-                    </h2>
                     <div className="locations-view__container">
                         <Grid>
+                            <Col phone={12} tablet={12} desktop={12}>
+                                <h2>Standorte</h2>
+                                <h5>
+                                    {Object.keys(dataset.list).length} davon in {dataset.title}
+                                </h5>
+                            </Col>
                             {Object.keys(dataset.list).map((slug, centerIndex) => {
                                 const center = dataset.list[slug];
 

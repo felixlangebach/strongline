@@ -26,7 +26,9 @@ export default class ContactView extends Component {
                     </h2>
                     <Form action="#contact" submitText="Absenden">
                         <Input id="mail" type="email" placeholder="E-Mail" />
+                        <Input id="alter" type="number" placeholder="Alter" />
                         <Input id="name" type="text" placeholder="Vorname Nachname" />
+                        <Input id="subject" type="text" placeholder="Ihr Kontaktierungsgrund" />
                         <Textarea id="message" placeholder="Ihre Nachricht (max. 255 Zeichen)" />
                     </Form>
                 </ContentSection>

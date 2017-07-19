@@ -1,5 +1,7 @@
 .home-section p {
     max-width: 98%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .home-section p.card-package-intro-text {

@@ -20,7 +20,11 @@
 }
 
 .mdl-layout.mdl-layout--home .mdl-app-bar-logo {
-    background-color: transparent;
+    background-color: #000000;
+}
+
+.mdl-layout.mdl-layout--home .mdl-layout__drawer-button .material-icons {
+    color: #fff;
 }
 
 @media all and (min-width: 1024px) {

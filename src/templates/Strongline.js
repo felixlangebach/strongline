@@ -10,6 +10,10 @@ import Header from "../partials/Header";
 import Footer from "../partials/Footer";
 import Drawer from "../partials/Drawer";
 import AppBar from "../partials/AppBar";
+import ShareBar from "../partials/ShareBar";
+
+// Components
+import Line from "../components/Line";
 
 // Datasets
 import links from "../partials/ressources/links";
@@ -37,6 +41,8 @@ class Strongline extends Component {
                 <main className="mdl-layout__content">
                     <div className="page-content">
                         {this.props.children}
+                        <ShareBar title="Werde Teil der Strongline Community" />
+                        <Line color="#ec6248" height={3} />
                     </div>
                 </main>
                 <Footer />

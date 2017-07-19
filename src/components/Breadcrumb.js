@@ -9,7 +9,7 @@ export default class Breadcrumb extends Component {
 
         return (
             <div className="breadcrumb">
-                <ContentSection>
+                <ContentSection modifier="keep-spacing">
                     <ul className="breadcrumb-list">
                         {links.map((link, index) => {
                             return (

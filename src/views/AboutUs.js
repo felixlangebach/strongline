@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Typist from "react-typist";
 import typistConfig from "../data/typistConfig";
 import Button from "../components/Button";
-import Icon from "../components/Icon";
+import MaterialIcon from "../components/MaterialIcon";
 import Grid, { Col } from "../components/Grid";
 import Breadcrumb from "../components/Breadcrumb";
 import ContentSection from "../layouts/ContentSection";
@@ -24,10 +24,12 @@ export default class AboutUsView extends Component {
                     ]}
                 />
                 <ContentSection>
-                    <h2>
-                        <Typist {...typistConfig}>Über uns</Typist>
-                    </h2>
                     <Grid>
+                        <Col phone={12} tablet={12} desktop={12}>
+                            <h2>
+                                <Typist {...typistConfig}>Über uns</Typist>
+                            </h2>
+                        </Col>
                         <Col phone={12} tablet={4} desktop={4}>
                             <p>
                                 Leverage agile frameworks to provide a robust synopsis for high
@@ -102,7 +104,7 @@ export default class AboutUsView extends Component {
                         <Col phone={12} tablet={12} desktop={12} key="show-all">
                             <Link to="/ueber-uns/mitarbeiter">
                                 <Button>
-                                    <Icon name="link" /> Unsere Mitarbeiter
+                                    <MaterialIcon name="link" /> Unsere Mitarbeiter
                                 </Button>
                             </Link>
                         </Col>

@@ -1,10 +1,101 @@
-# Information
-tbd.
+# Informationen
 
-# Getting Started
-tbd. 
+## Verwendete Frameworks
 
-# About React
+> Schema: {Framework} ({Autor}, {Lizenzierung}, {Lizenz})
+
+* [Babel @^6.23.0](https://babeljs.io) (Babel Community, OpenSource, MIT)
+* [Webpack @^2.6.1](https://webpack.github.io) (Webpack Community, OpenSource, MIT)
+* [React @^15.6.1](https://github.com/facebook/react) (Facebook, OpenSource, BSD)
+* [React DOM @^15.6.1](https://github.com/facebook/react) (Facebook, OpenSource, MIT)
+* [React Router @^4.1.1](https://github.com/ReactTraining/react-router) ([ReactTraining](https://github.com/ReactTraining), OpenSource, MIT)
+* [React Router DOM @^4.1.1](https://github.com/ReactTraining/react-router/tree/master/packages/react-router-dom) ([ReactTraining](https://github.com/ReactTraining), OpenSource, MIT)
+* [React Scripts @^1.0.10](https://github.com/facebookincubator/create-react-app) ([Facebook Incubator](https://github.com/facebookincubator), OpenSource, BSD)
+* [React Typist @^1.1.1](https://github.com/jstejada/react-typist) ([jstejada](https://github.com/jstejada), OpenSource, MIT)
+* [React Helmet @^1.1.1](https://github.com/nfl/react-helmet) ([NFL](https://github.com/nfl), OpenSource, MIT)
+* [Material Design Lite @^1.1.1](https://getmdl.io/) (Google, OpenSource, MIT)
+
+### Babel + Webpack
+Babel und Webpack wird benötigt um eine Lauffähige Browser-Applikation zu erstellen, indem es den CSS und JS Inhalt kompiliert, transpiliert und bündelt.
+
+### React
+> React ist eine JavaScript-Bibliothek zum Erstellen von Benutzeroberflächen. Es wurde 2013 von Facebook unter BSD-Lizenz veröffentlicht und schlägt seitdem immer größere Wellen und beeinflusst nachhaltig die gesamte JavaScript-Frontendlandschaft.
+
+Zitat von [reactjs.de](http//reactjs.de)
+
+Grunsätzlich wurde hier auf React gesetzt um ein möglichst schlankes und schnelles Fronten zu entwickeln, ohne dabei duplizierten Code schreiben zu müssen. Zudem entnimmt React der ganzen Applikation noch komplexität und gewisse Prozeduren welche mit Standardtechnologien etwass komplexer währen.
+
+Zu React selbst werden hier noch zahlreiche "Unterpakete" von React wie z.B. der `react-router` verwendet, welcher es ermöglicht mehrere Ansichten und generische Ansichten mit Parametern zu erstellen. Eine Ausführliche Beschreibung der jeweiligen Abhängigkeiten sind auf der Webseite des Paketes zu finden.
+
+### Material Design Lite
+> Google hat die Designsprache jetzt für die Nutzung auf Webseiten optimiert und nennt das Ganze Material Design Lite (MDL). Das „Lite“ im Namen resultiert laut Google aus unterschiedlichen Faktoren: So hat MDL nur wenige Abhängigkeiten, was sowohl die Installation als auch die Nutzung vereinfachen soll.
+
+> Darüber hinaus ist Material Design Lite in der Tat sehr leicht – der Code ist gezippt nur 27 Kilobyte groß. Bei getmdl.io handelt es sich um eine Library, die unterschiedliche Komponenten und Templates in CSS, HTML und JS enthällt. MDL lässt sich laut Google mit so gut wie jeder Frontend-Lösung nutzen, sodass Webdesigner und Entwickler nicht auf ihre Lieblingswerkzeuge verzichten müssen.
+
+Zitate von [T3N Deutschland](http://t3n.de/news/google-enthuellt-material-design-621169)
+
+Material Design Lite (MDL) wurde in diesem Projekt als Basis verwendet, um ein einheitliches und modernes UI mit einfachen Mitteln zu entwickeln. Dieses Framework wurde dann mit eigenem CSS überschrieben und umgestyled dass die ganze Webseite zum CI/CD des Designs passt.
+
+## Projektstruktur
+
+```
+StronglineApp
+ |
+ + node_modules/
+ + build/
+ + public/
+ + src/
+ |  |
+ |  + components/
+ |  + data/
+ |  + partials/
+ |  + templates/
+ |  + ui/
+ |  + views/
+ + index.js
+ + package.json
+ + registerServiceWorker.js
+```
+
+
+### node_modules (Ordner)
+Hier sind alle Abhängigkeiten (Dependencies) welche via NPM (**N**ode **P**ackage **M**anager) installiert worden (Siehe Abschnitt *Abhängigkeiten*). Die Referenzen werden in der Datei `package.json` abgelegt und können via CLI (**C**ommand **L**ine **I**nterface) über das Kommando `npm install` installiert werden. Hierfür wird [NodeJS](http://nodejs.org) benötigt (Crossplattform Framework).
+
+### build (Ordner)
+Das Projekt wird via [Webpack](https://webpack.github.io/) gebuildet. Dies transpiliert den ganzen Inhalt des Projektes in eine einzige Datei pro Sprache (CSS, JS, HTML) und macht diese Browserkompatibel.
+
+### src/components (Ordner)
+Hier sind alle Komponenten abgelegt welche auf der Seite N mal vorhanden sind. Sie bilden die verschiedenen Inhaltstypen ab. Pro Komponente ist eine React Komponente so wie eine optionale CSS Datei vorhanden.
+
+### src/data (Ordner)
+Hier sind alle Daten welche auf der Webseite vorkommen abgelegt. Pro "Datenbank" sind optional noch sog. Selektoren vorhanden, welche es vereinfachen auf gewisse Daten zuzugreifen oder sie zu Filtern.
+
+### src/partials (Ordner)
+Hier sind Partials - zu gut Deutsch "Seitenabschnitte" festgelegt welche auf jeder Seite vorkommen wie z.B. Header,Footer, Sidebar und so weiter. Die Partials haben Ihre spezifischen Daten in einem Unterordner mit dem Namen `./ressources` (z.B. Links für Header/Footer & co.).
+
+### src/templates (Ordner)
+Hier sind alle Vorlagen für die Applikation angelegt. In unserem Fall ist dies nur ein einziges Template welches den Seitenaufbau der gesamten Seite definiert. Das Template spezifiziert den Inhaltsbereich und lädt gewisse Partials an gewissen Orten. 
+
+Für den Shop könnte dementsprechend ein zweites Template z.B. `StronglineShop` angelegt werden.
+
+### src/ui (Ordner)
+Hier werden globale Styles definiert wie z.B. Bildlayouts, Farben, Linkverhalten und so weiter.
+
+### src/views (Ordner)
+Hier sind alle Ansichten der Applikation angelegt, in unserem Fall sind dies die Seiten wie z.B. Kontakt, Startseite, Über uns oder die Standorte.
+
+### package.json (Meta)
+Hier werden alle Abhängigkeiten (Dependencies) definiert, welche für die Applikation relevant sind. Zusätzlich können Scripts definiert werden, welche über die CLI ausgeführt werden können.
+
+### index.js (Startpunk)
+Diese Datei definiert das verhalten der ganzen Applikation. Hier werden die URLs für die einzelnen Seiten vergeben und das Setup für React wird hier vorgenommen. Neue Seiten sowie URL Anpassungen müssen hier registriert werden.
+
+### registerServiceWorker (SW, Moderne Browser)
+Diese Datei registriert einen [ServiceWorker](https://developers.google.com/web/fundamentals/getting-started/primers/service-workers). Dieser ServiceWorker cached automatisch alle lokalen Assets und hält diese auf dem neusten Stand Laufenden.
+Es wird hier auf die [Cache-first-Strategie](https://developers.google.com/web/fundamentals/instant-and-offline/offline-cookbook/#cache-falling-back-to-network) gesetzt. Dieser garantiert eine zuverlässige Applikation in stabilen oder unzuverlässigen Netzwerken.
+
+
+# Über React + Setup (Englisch)
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 

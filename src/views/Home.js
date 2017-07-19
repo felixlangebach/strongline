@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import database from "../data/events";
-import Icon from "../components/Icon";
+import MaterialIcon from "../components/MaterialIcon";
 import Button from "../components/Button";
 import Image from "../components/Image";
 import Form, { ExpandableInput } from "../components/Form";
@@ -10,6 +10,7 @@ import Line from "../components/Line";
 import CardPackage from "../components/CardPackage";
 import EventCard from "../components/EventCard";
 import BackgroundImage from "../components/BackgroundImage";
+import Newsletter from "../partials/Newsletter";
 import ContentSection from "../layouts/ContentSection";
 import { Switch } from "../components/Form";
 import Grid, { Col, ContentWrapper as ColContent } from "../components/Grid";
@@ -71,7 +72,7 @@ export default class HomeView extends Component {
                         <Col phone={12} tablet={12} desktop={12} key="show-all">
                             <Link to="/angebote">
                                 <Button>
-                                    <Icon name="link" /> Alle Angebote anzeigen
+                                    <MaterialIcon name="link" /> Alle Angebote anzeigen
                                 </Button>
                             </Link>
                         </Col>
@@ -202,21 +203,12 @@ export default class HomeView extends Component {
                     </ContentSection>
                 </div>
                 <div className="home-section home-section-light-grey">
-                    <ContentSection modifier="spaced-inner" align="center">
-                        <h3>Newsletter</h3>
-                        <p className="newsletter-sign-up-text">
-                            Melden Sie sich jetzt für unsere Newsletter an!
-                        </p>
-                        <Form action="#newsletter-sign-up" showSubmitButton={false}>
-                            <ExpandableInput
-                                type="mail"
-                                icon="mail outline"
-                                id="newsletter"
-                                placeholder="Newsletter Anmeldung"
-                                inputPlaceholder="max@mustermann.de"
-                            />
-                        </Form>
-                    </ContentSection>
+                    <Newsletter
+                        title="Newsletter"
+                        text="Melden Sie sich jetzt für unsere Newsletter an!"
+                        inputPlaceholder="max@mustermann.de"
+                        placeholder="E-Mail"
+                    />
                 </div>
                 <Line color="#ec6248" height={5} />
             </div>
