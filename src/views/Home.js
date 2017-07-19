@@ -71,7 +71,7 @@ export default class HomeView extends Component {
                                 Aktuelle Angebote <small>({database.length} verfügbar)</small>
                             </h2>
                         </Col>
-                        {database.splice(0, 3).map((data, index) => {
+                        {database.slice(0, 3).map((data, index) => {
                             return (
                                 <Col phone={12} tablet={4} desktop={4} key={index}>
                                     <EventCard
