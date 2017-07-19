@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Helmet } from "react-helmet";
 
 // Database
 import { getLocationByRegion } from "../data/locations";
@@ -21,6 +22,11 @@ export default class LocationsView extends Component {
 
         return (
             <div className="locations-view">
+                <Helmet>
+                    <title>
+                        Strongline - Standorte in {dataset.title}
+                    </title>
+                </Helmet>
                 <Breadcrumb
                     links={[
                         {

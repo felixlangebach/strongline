@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Helmet } from "react-helmet";
 
 // Typing animation library
 import Typist from "react-typist";
@@ -21,6 +22,9 @@ export default class ContactView extends Component {
     render() {
         return (
             <div data-view="ContactView">
+                <Helmet>
+                    <title>Strongline - Kontakt</title>
+                </Helmet>
                 <Breadcrumb
                     links={[
                         {

@@ -1,11 +1,18 @@
 .mdl-cell__content-wrapper {
     padding: 10px 40px 20px 40px;
-    margin-right: 50%;
+    margin-right: 10%;
+}
+
+.mdl-cell--fill-image img {
+    height: 100%;
+    width: 100%;
+    image-rendering: pixelated;
+    object-fit: cover;
 }
 
 .mdl-cell__content-wrapper--align-right {
     text-align: right;
-    margin-left: 50%;
+    margin-left: 10%;
     margin-right: 0;
 }
 

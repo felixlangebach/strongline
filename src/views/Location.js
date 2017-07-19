@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { withRouter } from "react-router";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 // Datasets
 import { getLocationByRegion, getLocationByRegionAndId } from "../data/locations";
@@ -16,9 +17,16 @@ import MaterialIcon from "../components/MaterialIcon";
 import Grid, { Col } from "../components/Grid";
 
 class LocationView extends Component {
-    renderNotFound() {
+    renderNotFound(invalidLocation) {
         return (
             <div>
+                <Helmet>
+                    {invalidLocation
+                        ? <title>
+                              Strongline - Standort {invalidLocation} nicht gefunden
+                          </title>
+                        : <title>Strongline - Unbekannter Standort</title>}
+                </Helmet>
                 <h2>Nichts gefunden ...</h2>
                 <p>
                     Finde deinen Standort unter <Link to="/standorte">Standorte</Link>
@@ -50,6 +58,11 @@ class LocationView extends Component {
 
         return (
             <div data-view="LocationView">
+                <Helmet>
+                    <title>
+                        Strongline - Standort in {parentData.title} - {data.company}
+                    </title>
+                </Helmet>
                 <Breadcrumb
                     links={[
                         {

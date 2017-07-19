@@ -18,6 +18,11 @@
     padding: 75px auto;
 }
 
+.content-section--spaced-inner > h3 {
+    margin-top: 0;
+    padding-top: 20px;
+}
+
 .content-section--spaced-title {
     margin: 55px auto 75px auto;
 }
