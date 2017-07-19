@@ -29,7 +29,7 @@ export default class Header extends Component {
                 <div className="mdl-layout__header-row">
                     <span className="mdl-layout-title">
                         <Link to="/">
-                            <Image className="mdl-layout-logo" src="logo_strongline.svg" />
+                            <Image className="mdl-layout-logo" src="logo_finish_white.png" />
                         </Link>
                     </span>
                     <div className="mdl-layout-spacer" />
