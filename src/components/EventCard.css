@@ -30,11 +30,11 @@
 .event-card > .mdl-card__actions > .mdl-button {
     color: #fff;
 }
-.mdl-card__date {
+.event-card .mdl-card__date {
     font-size: 80%;
     font-weight: 300;
 }
-.mdl-card__time {
+.event-card .mdl-card__time {
     font-size: 60%;
     font-weight: 400;
 }

@@ -24,11 +24,14 @@ import AboutUsView from "./views/AboutUs";
 import ContactView from "./views/Contact";
 import TrendignCollectionView from "./views/TrendingCollection";
 
+// Accessing Browser History via React
 const History = createHistory();
 
 ReactDOM.render(
     <Router history={History}>
+        {/* StronglineTemplate will wrap the View components */}
         <StronglineTemplate>
+            {/* Switch will use the routes below, if no matching route was accessed it will show the ErrorView */}
             <Switch>
                 <Route exact path="/" component={HomeView} />
                 <Route exact path="/standorte" component={LocationsView} />

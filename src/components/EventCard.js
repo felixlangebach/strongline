@@ -3,7 +3,7 @@ import MaterialIcon from "./MaterialIcon";
 
 import "./EventCard.css";
 
-export default class Card extends Component {
+export default class EventCard extends Component {
     render() {
         return (
             <div className="event-card mdl-card mdl-shadow--2dp">
