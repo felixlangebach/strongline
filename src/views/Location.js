@@ -104,13 +104,6 @@ class LocationView extends Component {
                                     <br />
                                 </p>
                                 <hr />
-<<<<<<< HEAD
-
-                                {template(data.description, {
-                                    company: data.company,
-                                    region: parentData.title,
-                                    address: data.contact.address
-=======
                                 {data.description.map((description, index) => {
                                     return (
                                         <p>
@@ -121,7 +114,6 @@ class LocationView extends Component {
                                             })}
                                         </p>
                                     );
->>>>>>> 5d02ff06c7e14cf84b4a5dfce40c78199225e1f6
                                 })}
                             </div>
                         </Col>
