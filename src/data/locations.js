@@ -13,7 +13,8 @@ const database = {
                     location: "St. Gallen, Schweiz"
                 },
                 description: "Informationstext kommt hier hin",
-                shortDescription: "Kurzer Informationstext kommt hier hin"
+                shortDescription:
+                    "Besuchen Sie uns in unsere Filiale Strongline Stadt SG. Wir freuen uns auf Ihren Besuch."
             },
             // Strongline ausserhalb der Stadt
             "st-fiden": {
@@ -25,7 +26,7 @@ const database = {
                     location: "St. Gallen, Schweiz"
                 },
                 description: "Informationstext kommt hier hin",
-                shortDescription: "Kurzer Informationstext kommt hier hin"
+                shortDescription: "Besuchen Sie uns in unsere Filiale {company}. Wir freuen uns auf Ihren Besuch."
             }
         }
     },
@@ -41,7 +42,7 @@ const database = {
                     location: "Zürich Kreis 1, Schweiz"
                 },
                 description: "Informationstext kommt hier hin",
-                shortDescription: "Kurzer Informationstext kommt hier hin"
+                shortDescription: "Besuchen Sie uns in unsere Filiale {company}. Wir freuen uns auf Ihren Besuch."
             },
             "city-kreis-2": {
                 company: "Strongline ZH Kreis 2",
@@ -52,7 +53,7 @@ const database = {
                     location: "Zürich Kreis 2, Schweiz"
                 },
                 description: "Informationstext kommt hier hin",
-                shortDescription: "Kurzer Informationstext kommt hier hin"
+                shortDescription: "Besuchen Sie uns in unsere Filiale {company}. Wir freuen uns auf Ihren Besuch."
             },
             "city-kreis-3": {
                 company: "Strongline ZH Kreis 3",
@@ -63,7 +64,7 @@ const database = {
                     location: "Zürich Kreis 3, Schweiz"
                 },
                 description: "Informationstext kommt hier hin",
-                shortDescription: "Kurzer Informationstext kommt hier hin"
+                shortDescription: "Besuchen Sie uns in unsere Filiale {company}. Wir freuen uns auf Ihren Besuch."
             }
         }
     },
@@ -79,7 +80,7 @@ const database = {
                     location: "Dietikon, Schweiz"
                 },
                 description: "Informationstext kommt hier hin",
-                shortDescription: "Kurzer Informationstext kommt hier hin"
+                shortDescription: "Besuchen Sie uns in unsere Filiale {company}. Wir freuen uns auf Ihren Besuch."
             }
         }
     },
@@ -95,7 +96,7 @@ const database = {
                     location: "Genf, Schweiz"
                 },
                 description: "Informationstext kommt hier hin",
-                shortDescription: "Kurzer Informationstext kommt hier hin"
+                shortDescription: "Besuchen Sie uns in unsere Filiale {company}. Wir freuen uns auf Ihren Besuch."
             },
             "genf-see": {
                 company: "Strongline Genf See",
@@ -106,7 +107,7 @@ const database = {
                     location: "Genf See, Schweiz"
                 },
                 description: "Informationstext kommt hier hin",
-                shortDescription: "Kurzer Informationstext kommt hier hin"
+                shortDescription: "Besuchen Sie uns in unsere Filiale {company}. Wir freuen uns auf Ihren Besuch."
             },
             "genf-west": {
                 company: "Strongline Genf West",
@@ -117,7 +118,7 @@ const database = {
                     location: "Genf, Schweiz"
                 },
                 description: "Informationstext kommt hier hin",
-                shortDescription: "Kurzer Informationstext kommt hier hin"
+                shortDescription: "Besuchen Sie uns in unsere Filiale {company}. Wir freuen uns auf Ihren Besuch."
             }
         }
     },
@@ -133,7 +134,7 @@ const database = {
                     location: "Chur, Schweiz"
                 },
                 description: "Informationstext kommt hier hin",
-                shortDescription: "Kurzer Informationstext kommt hier hin"
+                shortDescription: "Besuchen Sie uns in unsere Filiale {company}. Wir freuen uns auf Ihren Besuch."
             },
             "chur-west": {
                 company: "Strongline Chur West",
@@ -144,7 +145,7 @@ const database = {
                     location: "Chur West, Schweiz"
                 },
                 description: "Informationstext kommt hier hin",
-                shortDescription: "Kurzer Informationstext kommt hier hin"
+                shortDescription: "Besuchen Sie uns in unsere Filiale {company}. Wir freuen uns auf Ihren Besuch."
             }
         }
     },
@@ -160,7 +161,7 @@ const database = {
                     location: "St. Moritz, Schweiz"
                 },
                 description: "Informationstext kommt hier hin",
-                shortDescription: "Kurzer Informationstext kommt hier hin"
+                shortDescription: "Besuchen Sie uns in unsere Filiale {company}. Wir freuen uns auf Ihren Besuch."
             }
         }
     },
@@ -176,7 +177,7 @@ const database = {
                     location: "Arosa, Schweiz"
                 },
                 description: "Informationstext kommt hier hin",
-                shortDescription: "Kurzer Informationstext kommt hier hin"
+                shortDescription: "Besuchen Sie uns in unsere Filiale {company}. Wir freuen uns auf Ihren Besuch."
             }
         }
     },
@@ -192,7 +193,7 @@ const database = {
                     location: "Kreuzlingn, Schweiz"
                 },
                 description: "Informationstext kommt hier hin",
-                shortDescription: "Kurzer Informationstext kommt hier hin"
+                shortDescription: "Besuchen Sie uns in unsere Filiale {company}. Wir freuen uns auf Ihren Besuch."
             }
         }
     },
@@ -208,7 +209,7 @@ const database = {
                     location: "Wil, Schweiz"
                 },
                 description: "Informationstext kommt hier hin",
-                shortDescription: "Kurzer Informationstext kommt hier hin"
+                shortDescription: "Besuchen Sie uns in unsere Filiale {company}. Wir freuen uns auf Ihren Besuch."
             }
         }
     },
@@ -224,7 +225,7 @@ const database = {
                     location: "Andermatt, Schweiz"
                 },
                 description: "Informationstext kommt hier hin",
-                shortDescription: "Kurzer Informationstext kommt hier hin"
+                shortDescription: "Besuchen Sie uns in unsere Filiale {company}. Wir freuen uns auf Ihren Besuch."
             }
         }
     },
@@ -240,7 +241,7 @@ const database = {
                     location: "Frauenfeld, Schweiz"
                 },
                 description: "Informationstext kommt hier hin",
-                shortDescription: "Kurzer Informationstext kommt hier hin"
+                shortDescription: "Besuchen Sie uns in unsere Filiale {company}. Wir freuen uns auf Ihren Besuch."
             }
         }
     },
@@ -256,7 +257,7 @@ const database = {
                     location: "Bern, Schweiz"
                 },
                 description: "Informationstext kommt hier hin",
-                shortDescription: "Kurzer Informationstext kommt hier hin"
+                shortDescription: "Besuchen Sie uns in unsere Filiale {company}. Wir freuen uns auf Ihren Besuch."
             },
             "bern-west": {
                 company: "Strongline Bern West",
@@ -267,7 +268,7 @@ const database = {
                     location: "Bern, Schweiz"
                 },
                 description: "Informationstext kommt hier hin",
-                shortDescription: "Kurzer Informationstext kommt hier hin"
+                shortDescription: "Besuchen Sie uns in unsere Filiale {company}. Wir freuen uns auf Ihren Besuch."
             },
             "bern-ost": {
                 company: "Strongline Bern Ost",
@@ -278,7 +279,7 @@ const database = {
                     location: "Bern, Schweiz"
                 },
                 description: "Informationstext kommt hier hin",
-                shortDescription: "Kurzer Informationstext kommt hier hin"
+                shortDescription: "Besuchen Sie uns in unsere Filiale {company}. Wir freuen uns auf Ihren Besuch."
             }
         }
     },
@@ -294,7 +295,7 @@ const database = {
                     location: "Pfäffikon, Schweiz"
                 },
                 description: "Informationstext kommt hier hin",
-                shortDescription: "Kurzer Informationstext kommt hier hin"
+                shortDescription: "Besuchen Sie uns in unsere Filiale {company}. Wir freuen uns auf Ihren Besuch."
             },
             "pfaeffikon-west": {
                 company: "Strongline Pfäffikon West",
@@ -305,7 +306,7 @@ const database = {
                     location: "Pfäffikon, Schweiz"
                 },
                 description: "Informationstext kommt hier hin",
-                shortDescription: "Kurzer Informationstext kommt hier hin"
+                shortDescription: "Besuchen Sie uns in unsere Filiale {company}. Wir freuen uns auf Ihren Besuch."
             }
         }
     },
@@ -321,7 +322,7 @@ const database = {
                     location: "Richterswil, Schweiz"
                 },
                 description: "Informationstext kommt hier hin",
-                shortDescription: "Kurzer Informationstext kommt hier hin"
+                shortDescription: "Besuchen Sie uns in unsere Filiale {company}. Wir freuen uns auf Ihren Besuch."
             }
         }
     },
@@ -337,7 +338,7 @@ const database = {
                     location: "Dietlikon, Schweiz"
                 },
                 description: "Informationstext kommt hier hin",
-                shortDescription: "Kurzer Informationstext kommt hier hin"
+                shortDescription: "Besuchen Sie uns in unsere Filiale {company}. Wir freuen uns auf Ihren Besuch."
             }
         }
     },
@@ -353,7 +354,7 @@ const database = {
                     location: "Laax, Schweiz"
                 },
                 description: "Informationstext kommt hier hin",
-                shortDescription: "Kurzer Informationstext kommt hier hin"
+                shortDescription: "Besuchen Sie uns in unsere Filiale {company}. Wir freuen uns auf Ihren Besuch."
             }
         }
     }
