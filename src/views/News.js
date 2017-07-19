@@ -55,7 +55,7 @@ export default class NewsView extends Component {
                         </Col>
                         {database.old.map((data, index) => {
                             return (
-                                <Col phone={12} tablet={3} desktop={2} key={index}>
+                                <Col phone={12} tablet={4} desktop={2} key={index}>
                                     <NewsCard
                                         modifier="small"
                                         title={data.title}

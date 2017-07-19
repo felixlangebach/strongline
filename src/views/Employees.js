@@ -42,16 +42,20 @@ export default class EmployeesView extends Component {
                             <h2>
                                 Unsere Mitarbeiter{" "}
                                 <small>
-                                    ({database.coaches.length + database.business.length})
+                                    ({database.coaches.length + database.business.length} Total)
                                 </small>
                             </h2>
                         </Col>
                         <Col phone={12} tablet={6} desktop={6}>
-                            <h5>Coaches</h5>
+                            <h5>
+                                Coaches <small>({database.coaches.length})</small>
+                            </h5>
                             <List items={database.coaches} />
                         </Col>
                         <Col phone={12} tablet={6} desktop={6}>
-                            <h5>Geschäftsleitung</h5>
+                            <h5>
+                                Geschäftsleitung <small>({database.business.length})</small>
+                            </h5>
                             <List items={database.business} />
                         </Col>
                     </Grid>
